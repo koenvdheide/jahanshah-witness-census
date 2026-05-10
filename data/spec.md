@@ -13,6 +13,7 @@ This document describes the structure of `witness_register.json`, the primary ar
   "schema_version": 1,
   "generated": "2026-05-02",
   "purpose": "...",
+  "rejection_inclusion_criterion": "...",
   "witnesses": [ ... ],
   "stats": { ... },
   "teis_yesevi_roster": [ ... ]
