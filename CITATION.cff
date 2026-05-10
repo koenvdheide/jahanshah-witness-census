@@ -24,6 +24,11 @@ abstract: >
   Iranian Azerbaijani (Ilkhchi Kırklar Ocağı)), 2 candidates flagged as
   probably non-Jahanshah, 1 lost-attested-only (Diyarbakır YE per Cunbur
   1999), and 2 rejected.
+  The 2 rejected entries are audit-preserved rebuttals to specific
+  claims in published scholarship (Rahimov 1986 Baku edition) and a
+  2021 institutional acquisition announcement (AMEA); routine search
+  false-positives are recorded in the per-session search JSONs under
+  data/searches/, not the register.
   Includes a 5-family search-key matrix (modern Latin, 19th-c.
   Orientalist, Soviet-Cyrillic, Arabic-script, catalogue-context)
   covering Persian, Turkish, Ottoman Turkish, and Azerbaijani Turkic

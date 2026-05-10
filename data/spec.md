@@ -110,7 +110,7 @@ The terminal-state enum has six values:
 | `candidate_probably_non_cihansah` | 1 | Manuscript confirmed to exist; attribution to Cihānşāh weakly supported. |
 | `candidate_probably_yusuf_hakiki_or_other_homonym` | 1 | Manuscript confirmed to exist; attribution probably points to a homonym (Yusuf Hakîkî or another *Hakîkî* poet). |
 | `lost_witness_attested_only` | 1 | Witness attested in scholarly literature but no longer extant or no longer locatable. |
-| `rejected` | 2 | Investigated and dismissed; audit-preserved with explicit `rejection_reason`. |
+| `rejected` | 2 | Investigated and dismissed; audit-preserved with explicit `rejection_reason`. **Inclusion criterion**: only candidates cited in published scholarship or acquired as Cihānşāh witnesses by a major institution appear here. Routine search false-positives live in per-session JSONs under `data/searches/`. |
 
 `pending` is a transient state allowed during execution. At the v1.0.0 publication state, no entry carries `pending`.
 
@@ -132,7 +132,7 @@ The two top-line counts: `total_witnesses_active = 12` excludes only the 2 `reje
 
 ## Verification rule
 
-Every entry in `witness_register.json` carries an evidence trail that resolves independently. Resolvable references typically appear in `discovery_source`; where a witness was first surfaced through means other than a single URL/printed reference, the resolvable evidence may live in `scholarly_attestation`, `rejection_reason`, or `decoration.data_source` instead. Candidate bibliography is treated as candidate, not attested, until verified by an independently resolvable source URL or printed-catalogue reference. The `rejected` entries are kept in the register, not silently deleted, to preserve the audit trail of which proposed witnesses were investigated and dismissed.
+Every entry in `witness_register.json` carries an evidence trail that resolves independently. Resolvable references typically appear in `discovery_source`; where a witness was first surfaced through means other than a single URL/printed reference, the resolvable evidence may live in `scholarly_attestation`, `rejection_reason`, or `decoration.data_source` instead. Candidate bibliography is treated as candidate, not attested, until verified by an independently resolvable source URL or printed-catalogue reference. The `rejected` entries are kept in the register, not silently deleted, to preserve the audit trail of which proposed witnesses were investigated and dismissed. Inclusion in the register requires that the candidate has been cited in published scholarship or acquired by a major institution as a Cihānşāh witness; routine search false-positives are documented in the per-session JSONs under `data/searches/` and not promoted to the register. The two current rejected entries both address one underlying question, namely whether Baku holds an independent Cihānşāh codex, and both answer it in the negative with independent evidence.
 
 ## Example entry: bl_or_9493 (abridged)
 

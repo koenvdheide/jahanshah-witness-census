@@ -2,6 +2,7 @@
   "schema_version": 1,
   "generated": "2026-05-02",
   "purpose": "Authoritative witness register for the Ḥaqīqī / Hakîkî (Jahānshāh Qaraqoyunlu) manuscript census. Research-only; not corpus-integrated. See README.md for scope and methodology.",
+  "rejection_inclusion_criterion": "The two `rejected` entries below are audit-preserved rebuttals to specific claims that have appeared in published scholarship or in a major institutional acquisition announcement. Routine search false-positives (e.g., name-collision noise, namesake disambiguations, body-text matches in WordPress catalogues) are documented in the per-session JSONs under `data/searches/` and are not promoted to the register. Both rejected entries here address one underlying question, namely whether Baku holds an independent Cihānşāh codex; both answer that question in the negative with two independent strands of evidence.",
   "witnesses": [
     {
       "witness_id": "bl_or_9493",
