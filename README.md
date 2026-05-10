@@ -8,7 +8,6 @@ A codicological inventory of manuscript witnesses to the *Dīvān* of **Jahansha
 - **Negar Kazemipourleilabadi**, Ludwig-Maximilians-Universität München, Department of Art History (ORCID [0009-0008-2289-7492](https://orcid.org/0009-0008-2289-7492))
 
 **License**: [CC BY 4.0](LICENSE)
-**DOI**: *(minted on first Zenodo release; will be added here)*
 
 ## Coverage
 
