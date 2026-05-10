@@ -4,10 +4,11 @@
   "session_id": "iran-reachability-retry-2026-05-10",
   "date": "2026-05-10",
   "scope": "9 Iranian portals previously documented as blocked in the 2026-05-02 Iran/Caucasus sweep. Reachability-only retest. Search execution deferred. Probes ran from a UK/EU baseline plus an Uzbekistan VPN route for the geo-IP-blocked subset.",
+  "geopolitical_caveat": "Iranian internet infrastructure is currently subject to wartime intermittent shutdowns (2026 conflict). Portal reachability documented here is point-in-time as of 2026-05-10; a portal blocked or reachable on this date may flip on subsequent days. Researchers replicating these probes should expect different results across attempts. The taxonomy entries 'still_blocked', 'reachable_*', etc. should be read as a single observation, not a durable property of the portal.",
   "method_summary": {
     "tier_1": "WebFetch direct HTTP from session baseline IP (UK/EU)",
     "tier_2": "https://r.jina.ai/<URL> third-party HTML mirror",
-    "tier_3": "Playwright headless browser (executes JS redirects, follows DOM); ran from local machine routed through Uzbekistan VPN for the second pass on geo-IP-blocked targets",
+    "tier_3": "Playwright headless browser (executes JS redirects, follows DOM); ran from local machine routed through Uzbekistan VPN for the second pass on geo-IP-blocked targets, then re-tested without VPN to disambiguate JS-redirect failures from genuine geo-IP blocks",
     "deferred": "Wayback Machine snapshots not collected this session; can be added in a follow-on if last-known-live evidence becomes useful for any portal"
   },
   "probes": [
