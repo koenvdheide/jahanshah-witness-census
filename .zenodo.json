@@ -1,0 +1,54 @@
+{
+  "title": "Jahanshah Qaraqoyunlu (Hakîkî) Manuscript Witness Census",
+  "version": "1.0.0",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "van der Heide, Koen",
+      "orcid": "0009-0008-9855-3848",
+      "affiliation": "Independent Scholar"
+    },
+    {
+      "name": "Kazemipourleilabadi, Negar",
+      "orcid": "0009-0008-2289-7492",
+      "affiliation": "Ludwig-Maximilians-Universität München, Department of Art History"
+    }
+  ],
+  "description": "<p>A codicological inventory of manuscript witnesses to the <em>Dīvān</em> of <strong>Jahanshah Qaraqoyunlu</strong> (d. 872 AH / 1467 CE; pen name <strong>Ḥaqīqī</strong> / <strong>Hakîkî</strong>), Qaraqoyunlu ruler-poet.</p><p>The census comprises 14 audited entries: 9 verified Jahanshah witnesses (5 on the TEIS Yesevi roster, 1 institutional fragment, 3 Alevi shrine witnesses in the <em>Ocak</em> tradition: 1 Anatolian (Diyarbakır Ulutürk) and 2 Iranian Azerbaijani (Ilkhchi Kırklar Ocağı)), 2 candidates flagged as probably non-Jahanshah, 1 lost-attested-only (Diyarbakır YE per Cunbur 1999), and 2 rejected. Includes a 5-family search-key matrix (modern Latin, 19th-c. Orientalist, Soviet-Cyrillic, Arabic-script, catalogue-context) covering Persian, Turkish, Ottoman Turkish, and Azerbaijani Turkic forms; 5 tezkire entries plus 5 research-log extracts (verbatim sample verses where available).</p><p>The Alevi shrine corpus (Anatolian and Iranian Azerbaijani <em>Ocak</em> tradition) preserves eleven <em>ghazals</em> not present in the institutional editions examined, plus a complete unphotographed divan codex.</p><p>Methodology: Witness census combining aggregator sweeps (~30 union catalogues), <em>tezkire</em>/reference extraction (10 extract files: 5 tezkire entries plus 5 research-log extracts), <em>mecmûʿa</em> adjacency mining, auction-house archives, scribe-name search, printed-catalogue OCR backchain, and modern editor backchain.</p>",
+  "keywords": [
+    "Islamic manuscripts",
+    "Codicology",
+    "Persian poetry",
+    "Turkish poetry",
+    "Karakoyunlu",
+    "Qaraqoyunlu",
+    "Cihānşāh",
+    "Jahānshāh",
+    "Hakîkî",
+    "Ḥaqīqī",
+    "Alevi tradition",
+    "Anatolian Alevism",
+    "Iranian Azerbaijani Alevism",
+    "Tezkire",
+    "Manuscript witness census",
+    "Digital humanities"
+  ],
+  "subjects": [
+    {
+      "term": "Manuscripts, Islamic",
+      "identifier": "https://id.loc.gov/authorities/subjects/sh85080780",
+      "scheme": "url"
+    }
+  ],
+  "communities": [],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.fihrist.org.uk/catalog/manuscript_6481",
+      "relation": "isDescribedBy",
+      "resource_type": "publication-other"
+    }
+  ]
+}

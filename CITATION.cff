@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: "Jahanshah Qaraqoyunlu (Hakîkî) Manuscript Witness Census"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+authors:
+  - family-names: "van der Heide"
+    given-names: "Koen"
+    orcid: "https://orcid.org/0009-0008-9855-3848"
+    affiliation: "Independent Scholar"
+  - family-names: "Kazemipourleilabadi"
+    given-names: "Negar"
+    orcid: "https://orcid.org/0009-0008-2289-7492"
+    affiliation: "Ludwig-Maximilians-Universität München, Department of Art History"
+date-released: "2026-05-03"
+version: "1.0.0"
+license: "CC-BY-4.0"
+abstract: >
+  A codicological inventory of manuscript witnesses to the Dīvān
+  of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name Ḥaqīqī / Hakîkî),
+  Qaraqoyunlu ruler-poet. The census comprises 14
+  audited entries: 9 verified Jahanshah witnesses (5 on the TEIS Yesevi
+  roster, 1 institutional fragment, 3 Alevi shrine witnesses
+  in the Ocak tradition: 1 Anatolian (Diyarbakır Ulutürk) and 2
+  Iranian Azerbaijani (Ilkhchi Kırklar Ocağı)), 2 candidates flagged as
+  probably non-Jahanshah, 1 lost-attested-only (Diyarbakır YE per Cunbur
+  1999), and 2 rejected.
+  Includes a 5-family search-key matrix (modern Latin, 19th-c.
+  Orientalist, Soviet-Cyrillic, Arabic-script, catalogue-context)
+  covering Persian, Turkish, Ottoman Turkish, and Azerbaijani Turkic
+  forms; 5 tezkire entries plus 5 research-log extracts on Hakîkî (verbatim sample verses where available).
+  The Alevi shrine corpus
+  (Anatolian and Iranian Azerbaijani Ocak tradition) preserves eleven
+  ghazals not present in the institutional editions examined, plus a
+  complete unphotographed divan codex.
+keywords:
+  - "Islamic manuscripts"
+  - "Codicology"
+  - "Persian poetry"
+  - "Turkish poetry"
+  - "Karakoyunlu"
+  - "Qaraqoyunlu"
+  - "Cihānşāh"
+  - "Jahānshāh"
+  - "Hakîkî"
+  - "Ḥaqīqī"
+  - "Alevi tradition"
+  - "Anatolian Alevism"
+  - "Iranian Azerbaijani Alevism"
+  - "Tezkire"
+  - "Manuscript witness census"
+  - "Digital humanities"

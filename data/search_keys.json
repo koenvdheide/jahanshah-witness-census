@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "generated": "2026-05-02",
+  "purpose": "Author/title/identifier search-key matrix for the Haqiqi witness census. The matrix combines the modern-academic baseline with 19th-c. Orientalist forms, Soviet/Azerbaijani query forms, and additional Arabic-script orthographic variants.",
+  "author_forms": {
+    "modern_academic_latin": [
+      "Jahānshāh Qaraqoyunlu",
+      "Jihān-shāh Qara-qoyunlu",
+      "Jahanshah Qaraqoyunlu",
+      "Jihanshah Qaraqoyunlu",
+      "Jahan Shah",
+      "Jihan Shah",
+      "Ḥaqīqī",
+      "Haqiqi",
+      "Hakîkî",
+      "Hakiki",
+      "Hakyky"
+    ],
+    "modern_turkish": [
+      "Cihan Şah",
+      "Cihânşâh",
+      "Cihanşah",
+      "Cihansah Hakiki",
+      "Cihânşâh Hakîkî",
+      "Karakoyunlu Cihan Şah",
+      "Karakoyunlu Cihanşah Hakiki"
+    ],
+    "nineteenth_century_orientalist": {
+      "_note": "How Rieu, Blochet, Pertsch, Ethé, and other 19th-c. cataloguers would have rendered the name.",
+      "french": [
+        "Djihân Châh",
+        "Djehan Schah",
+        "Djihan Chah",
+        "Djahan Chah",
+        "Kara-Koyounlou",
+        "Kara Koyounlou"
+      ],
+      "german": [
+        "Dschahan Schah",
+        "Dschihān-Schāh",
+        "Dschihan Schah",
+        "Kara-Kojunlu",
+        "Karakojunlu"
+      ]
+    },
+    "soviet_russian_azerbaijani": {
+      "_note": "Forms used in Soviet-era cataloguing systems; relevant for Yerevan/Baku/Tashkent/Dushanbe holdings.",
+      "cyrillic": [
+        "Хакики",
+        "Хакики, Мирза Джаханшах",
+        "Джаханшах Хакики",
+        "Джиханшах",
+        "Мирза Джаханшах"
+      ],
+      "modern_azerbaijani_latin": [
+        "Cahanşah Həqiqi",
+        "Cahanşah Hakiki",
+        "Cahanşah Haqiqi",
+        "Jahanshah Hakyky",
+        "Cahanshah Heqiqi"
+      ]
+    },
+    "arabic_script": {
+      "_note": "Multiple orthographic variants reflect cataloguer drift; both the dotted-yā and dotless-ya variants (حقىقى vs حقیقی) are attested.",
+      "preferred": [
+        "جهانشاه قراقویونلو حقیقی",
+        "جهانشاه حقیقی",
+        "حقیقی"
+      ],
+      "variants": [
+        "جهانشاه حقىقى",
+        "حقىقى",
+        "حقیقی، جهانشاه",
+        "حقیقی ترکمان",
+        "جهانشاه قرا یوسف",
+        "قراقویونلو",
+        "قره قویونلو"
+      ]
+    }
+  },
+  "title_forms": {
+    "core": [
+      "Dīvān",
+      "Dīwān",
+      "Diwan",
+      "Divan",
+      "Dīvān-i Ḥaqīqī",
+      "Divan-i Hakiki",
+      "Divan-ı Hakîkî",
+      "Külliyyāt",
+      "Kulliyat",
+      "Külliyyāt-i Ḥaqīqī"
+    ],
+    "ottoman_turkish_descriptive": [
+      "müretteb olmayan divan",
+      "Divan-ı Hakîkî",
+      "Cihânşâh Hakîkî Divanı"
+    ],
+    "arabic_script": [
+      "دیوان جهانشاه حقیقی",
+      "دیوان حقیقی",
+      "دیوان حقىقى",
+      "كليات حقیقی"
+    ]
+  },
+  "catalogue_context_keys": {
+    "_note": "Catalogue-context terms used to find Haqiqi witnesses indexed under generic descriptors rather than author. Search these AND/OR with author+title forms when the author-direct query returns zero.",
+    "anthology_terms": [
+      "mecmua",
+      "mecmûa",
+      "mecmuʿa",
+      "jung",
+      "cönk",
+      "mecmuʿa-i ashʿār",
+      "جنگ",
+      "مجموعه"
+    ],
+    "european_catalogue_descriptors": [
+      "poetry collection",
+      "Gedichtsammlung",
+      "recueil",
+      "recueil de poésies persanes et turques",
+      "poésies turques",
+      "Persian and Turkish poems",
+      "bilingual divan"
+    ]
+  },
+  "scribe_and_colophon_keys": {
+    "_note": "Scribe-name search keys: may find sibling manuscripts by the same scribe.",
+    "scribe_arabic": [
+      "قنبر علی اصفهانی",
+      "قنبرعلی اصفهانی",
+      "قنبر علي بن خسرو الاصفهاني"
+    ],
+    "scribe_latin": [
+      "Qanbar Ali Isfahani",
+      "Qanbar-Ali al-Isfahani",
+      "Qanbar Ali ibn Khusraw al-Isfahani",
+      "Kanber Ali Isfahani"
+    ],
+    "colophon_anchor_strings": [
+      "893 \"حقیقی\"",
+      "Shavval 893",
+      "Sevval 893",
+      "Ramażān 893"
+    ]
+  },
+  "nesimi_adjacency_keys": {
+    "_note": "Nesîmî/Hurufi adjacency mining keys for mecmûʿa sweeps. Haqiqi poems demonstrably travel inside Nesîmî collections (Ankara MK A 5252 evidence).",
+    "queries": [
+      "Nesimi Hakiki",
+      "Nesîmî Cihanşah",
+      "Nesimi \"Cihanşah\"",
+      "نسیمی حقیقی",
+      "Hurufi Hakiki",
+      "Nesimi Hakiki mecmua",
+      "Nesîmî Hakîkî müşterek"
+    ]
+  },
+  "modern_editions_and_studies_for_backchain": {
+    "_note": "Edition backchain keys. For each editor/author: which manuscript(s) used as base text? Cited as variants? Saw firsthand? Includes editions plus the Demirci 1997 article/study that introduced Süleymaniye Fatih 3808 + Ankara DTCF I/2221.",
+    "editions_and_studies": [
+      {
+        "editor": "Demirci, Jale",
+        "year": 1997,
+        "place": "Ankara: DTCF Türkoloji Dergisi XII/1: 127-134",
+        "note": "Article/study (not a critical edition). Introduced Süleymaniye Fatih 3808 + Ankara DTCF I/2221 as the iki yeni nüsha; see Macit 2000 verbatim citation."
+      },
+      {
+        "editor": "Hüseyinzade",
+        "year": 1966,
+        "place": "Yerevan"
+      },
+      {
+        "editor": "Rahimov, Hüseyinzade & Aliyev",
+        "year": "1986/2006",
+        "place": "Baku: Yazıcı"
+      },
+      {
+        "editor": "Recebov",
+        "year": 1999,
+        "place": "Ashgabat"
+      },
+      {
+        "editor": "Ownuk / Hangeldi",
+        "year": 2014,
+        "place": "Ashgabat"
+      },
+      {
+        "editor": "Alemdârî",
+        "year": "2001 / 1379 SH",
+        "place": "Tehran: Fîrûzân"
+      },
+      {
+        "editor": "Demirci",
+        "year": 2001,
+        "place": "Köksav, Ankara"
+      },
+      {
+        "editor": "Değirmençay",
+        "year": 2004,
+        "place": "Atatürk Üniv., Erzurum",
+        "note": "Persian poems edition only"
+      },
+      {
+        "editor": "Macit",
+        "year": 2002,
+        "place": "Grafiker, Ankara",
+        "note": "Turkish poems"
+      }
+    ]
+  },
+  "external_identifiers": {
+    "viaf": "43402797",
+    "fihrist_person": "person_43402797",
+    "fihrist_work": "work_20697"
+  }
+}
