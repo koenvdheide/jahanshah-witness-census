@@ -351,7 +351,7 @@
       "v2.0 design: expand the source-corpus matrix to include asnad.org as the primary chancery-document source. Document the URL pattern /en/document/<id>/ and the per-document fields (date_hijri / date_western / sender / recipient / type / location).",
       "v2.0 retrieval: pull all 21-23 asnad.org Cihanşah hits via /en/document/<id>/ for each result; capture full document images, transcriptions, and any prosopographic data.",
       "Residual-gap closure (lower priority): Playwright passes against Vienna ONB, Berlin Staatsbibliothek, Halle MENA-DOC; rate-limit-respecting retry of Bologna historica.unibo.it; headed-browser pass at Chester Beatty viewer.cbl.ie. Each is low expected yield given Fihrist exhaustiveness.",
-      "If v1.0.1 or later patch is published: include this cross-check artifact + the companion probe_2026-05-11_institutional_catalogue_rediscovery.json + an update to README documenting the asnad.org finding as a v2.0-relevant discovery (without changing the v1.0 register)."
+      "If v1.1.0 or later patch is published: include this cross-check artifact + the companion probe_2026-05-11_institutional_catalogue_rediscovery.json + an update to README documenting the asnad.org finding as a v2.0-relevant discovery (without changing the v1.0 register)."
     ]
   }
 }

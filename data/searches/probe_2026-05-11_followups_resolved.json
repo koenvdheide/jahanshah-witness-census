@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "session_label": "Resolution of 3 single-item follow-ups identified in the 2026-05-11 v1.0.1 candidate stack",
+  "session_label": "Resolution of 3 single-item follow-ups identified in the 2026-05-11 v1.1.0 candidate stack",
   "session_id": "followups-resolved-2026-05-11",
   "date": "2026-05-11",
-  "scope": "Targeted resolution of the 3 single-item follow-ups flagged across the 2026-05-11 probe artifacts: F-EDITION1 (Değirmençay 2021 edition addition), F-DIYANET-HURUFI-931 (full metadata extraction), F-FOLLOWUP-CAIRO-HIDIVIYYE (Yusuf-vs-other classification). All three resolved within v1.0.1 candidate scope without expanding the witness register.",
+  "scope": "Targeted resolution of the 3 single-item follow-ups flagged across the 2026-05-11 probe artifacts: F-EDITION1 (Değirmençay 2021 edition addition), F-DIYANET-HURUFI-931 (full metadata extraction), F-FOLLOWUP-CAIRO-HIDIVIYYE (Yusuf-vs-other classification). All three resolved within v1.1.0 candidate scope without expanding the witness register.",
   "method_summary": {
     "f_edition1": "Edit data/search_keys.json modern_editions_and_studies_for_backchain.editions_and_studies array to add the Değirmençay 2021 Erzurum Persian-poems edition entry alongside the existing 2004 entry by the same editor.",
     "f_diyanet_hurufi_931": "Playwright headless navigation to https://yazmaeserler.diyanet.gov.tr/details?id=931&materialType=YE; accessibility snapshot captures the full DOM after JS-rendering (the base64-encoded image-data portion is irrelevant to bibliographic metadata which renders as ordinary HTML text).",
@@ -70,12 +70,12 @@
       "resolution": {
         "teis_attribution": "Per TEIS Yesevi (the authoritative Turkish biographical encyclopedia used throughout v1.0), the Cairo Hidiviyye works 'Et-Tesnîm + Er-Rahîk el-Mahtûm' are attributed to YUSUF HAKÎKÎ Bursavi, NOT Cihanşah Qaraqoyunlu",
         "c3_audit_fp_risk_for_cihansah_search": "LOW (per C3 chunk JSON, line 149-150: 'work titles disambiguate; Cihanşah corpus is Divan-only')",
-        "v1_0_1_classification": "NOT_A_CIHANSAH_WITNESS_CANDIDATE; the 'indeterminate' tag in C3 was about Yusuf-vs-other-homonym uncertainty (whether the Cairo Hidiviyye record is genuinely Yusuf Hakîkî or a different namesake/misattribution), NOT about Cihanşah-relevance",
-        "out_of_scope_v1_0_1": "The Yusuf-vs-other-homonym disambiguation remains open but is out of v1.0.1 Cihanşah-witness scope. Defer to v2.0 if a comprehensive Yusuf Hakîkî MS census is undertaken.",
+        "v1_1_0_classification": "NOT_A_CIHANSAH_WITNESS_CANDIDATE; the 'indeterminate' tag in C3 was about Yusuf-vs-other-homonym uncertainty (whether the Cairo Hidiviyye record is genuinely Yusuf Hakîkî or a different namesake/misattribution), NOT about Cihanşah-relevance",
+        "out_of_scope_v1_1_0": "The Yusuf-vs-other-homonym disambiguation remains open but is out of v1.1.0 Cihanşah-witness scope. Defer to v2.0 if a comprehensive Yusuf Hakîkî MS census is undertaken.",
         "v2_resolution_path": "Direct Dar al-Kutub al-Misriyya catalogue query OR Çavuşoğlu/Boz Yusuf Hakîkî Divani edition introduction reading"
       },
       "v1_register_impact": "ZERO (was already excluded from Cihanşah witness candidates per work-title disambiguation)",
-      "status": "RESOLVED_FOR_V1_0_1_SCOPE_DEFERRED_FOR_V2_DETAIL"
+      "status": "RESOLVED_FOR_V1_1_0_SCOPE_DEFERRED_FOR_V2_DETAIL"
     }
   },
   "summary": {
@@ -91,12 +91,12 @@
       "removed": ["F-DIYANET-HURUFI-931 v2.0 mecmûʿa-mining lead (downgraded: not Hurufi-proper)"],
       "retained_but_deferred": ["Yusuf Hakîkî Bursavi MS census v2.0 followup; Cairo Hidiviyye is one of several Yusuf-attributed locations needing v2.0 disambiguation"]
     },
-    "v1_0_1_residual_gap_count_after_followups": {
+    "v1_1_0_residual_gap_count_after_followups": {
       "tool_shaped_gaps": 10,
       "paywall_print_only_gaps": 9,
       "single_item_followups": 0,
       "v2_deferred_intentional": 5,
-      "note": "All 3 single-item follow-ups RESOLVED. Net v1.0.1 release-ready status unchanged: 0 release-blocking gaps."
+      "note": "All 3 single-item follow-ups RESOLVED. Net v1.1.0 release-ready status unchanged: 0 release-blocking gaps."
     }
   }
 }

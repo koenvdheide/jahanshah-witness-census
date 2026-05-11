@@ -9,7 +9,7 @@
     {
       "prior_main_context_claim": "yazmalar.gov.tr is CERT_WALLED_TO_WEBFETCH; site is live per Google indexing but cert chain blocks WebFetch; residual gap for Playwright cert-ignore pass",
       "chunk_c1_supersedes_with": "yazmalar.gov.tr is DEFINITIVELY_DEAD: nginx 404 across all probe paths after TLS bypass; ZERO Wayback snapshots 2022-2024; alt hostnames ECONNREFUSED. Cert error was the legacy server stub. NO Playwright pass will yield results. Operational catalogue is portal.yek.gov.tr (v1.0 coverage via yek-search agent already).",
-      "residual_gap_resolution": "FALSIFIED; remove from v1.0.1 release-blocker list"
+      "residual_gap_resolution": "FALSIFIED; remove from v1.1.0 release-blocker list"
     },
     {
       "prior_main_context_claim": "ISAM site-restricted Google returns 0 Cihanşah hits; suggests no Cihanşah-related catalogue records",

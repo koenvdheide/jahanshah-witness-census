@@ -13,7 +13,7 @@
       "blockage": "Advanced search login-walled (302 redirect to /Account/Login); list endpoint + /authority/personlist are JS-SPA without honoring URL parameters",
       "expected_witness_yield": "LOW; ankara_milli_kutuphane_a_5252 already in v1.0 register (sourced via Islamisation DB filiations panel TK_Mil_A_5252 slug, not via this portal directly). The site-restricted Google sweep already returned 0 Cihanşah hits.",
       "resolution_feasibility": "Playwright + manuscript-collections institutional registration. Account-creation has identity-tracking implications; user opt-in required. Out of remote-only autonomous scope.",
-      "disposition": "OUT_OF_SCOPE_FOR_V1_0_1; expected yield does not justify registration; A 5252 already in register via alternative channel",
+      "disposition": "OUT_OF_SCOPE_FOR_V1_1_0; expected yield does not justify registration; A 5252 already in register via alternative channel",
       "v2_relevance": "v2.0 codicology surface (/authority/papertypelist endpoint flagged for paper-type metadata enumeration)"
     },
     {
@@ -23,7 +23,7 @@
       "blockage": "Search endpoint returns HTTP 405 Method Not Allowed on GET; requires POST or JS form submission",
       "expected_witness_yield": "LOW; per WebSearch enumeration of EAP projects, Persian-related projects (EAP1526 Afshar 1736-1796 documents) are POST-Cihanşah; EAP848 Georgian heritage materials are non-Persian; no EAP project digitizes a 15th-c. Cihanşah-era Persian-Turkic poetry corpus",
       "resolution_feasibility": "Playwright POST form submission; technically straightforward. Yield-blocking factor is the scope mismatch, not the tooling.",
-      "disposition": "OUT_OF_SCOPE_FOR_V1_0_1; EAP project enumeration via WebSearch already confirmed no Cihanşah-period Persian-Turkic poetry digitization; the POST-form barrier is irrelevant to expected yield",
+      "disposition": "OUT_OF_SCOPE_FOR_V1_1_0; EAP project enumeration via WebSearch already confirmed no Cihanşah-period Persian-Turkic poetry digitization; the POST-form barrier is irrelevant to expected yield",
       "v2_relevance": "EAP1526 GNCM Afshar/Safavid documents may be parallel to asnad.org for v2.0 chancery scope"
     },
     {
@@ -33,7 +33,7 @@
       "blockage": "Subagent D confirmed UA-blocked to WebFetch; live UI is JS-rendered Blacklight; query endpoint signatures documented (f[cho_type_facet.en_ssim][], language_en, range)",
       "expected_witness_yield": "LOW; DLME contributing institutions are Bodleian + Michigan + LoC + Leiden, all already covered by Fihrist UK aggregator (heavily probed in v1.0). 575 Persian mss browse confirmed; no Cihanşah hit surfaced via Fihrist.",
       "resolution_feasibility": "Playwright + Blacklight URL construction; possible but redundant with Fihrist UK coverage",
-      "disposition": "OUT_OF_SCOPE_FOR_V1_0_1; institutional-overlap with Fihrist UK (already exhaustively probed); no additional yield",
+      "disposition": "OUT_OF_SCOPE_FOR_V1_1_0; institutional-overlap with Fihrist UK (already exhaustively probed); no additional yield",
       "v2_relevance": "None identified"
     },
     {
@@ -53,7 +53,7 @@
       "blockage": "Cloudflare UA-block 403; subagent D confirmed",
       "expected_witness_yield": "LOW; per subagent D Persian-MS facet enumerates 191 records; major US contributors (Princeton, Harvard, U Michigan, U Penn) are Fihrist-aggregated or OPenn-aggregated. The 9 printed-MS-catalogues that surfaced via broader Google sweep (Cochran/MMA, India Office, Bankipore, Madras, Oudh, Bodleian, etc.) are reference works already backchain-mined in v1.0.",
       "resolution_feasibility": "Playwright + Cloudflare evasion is HIGH cost; headed browser may resolve, but yield does not justify",
-      "disposition": "OUT_OF_SCOPE_FOR_V1_0_1; Cloudflare evasion cost vs near-zero expected yield. Indirect coverage via Fihrist UK + OPenn aggregators is the project's substitute.",
+      "disposition": "OUT_OF_SCOPE_FOR_V1_1_0; Cloudflare evasion cost vs near-zero expected yield. Indirect coverage via Fihrist UK + OPenn aggregators is the project's substitute.",
       "v2_relevance": "None identified"
     },
     {
@@ -97,20 +97,20 @@
       "blockage": "ERR_CONNECTION_CLOSED even via Belarus VPN; subagent B confirmed via 2026-05-11 retest",
       "expected_witness_yield": "LOW; per subagent B + project memory: Akimushkin 1964 printed Persian MSS catalogue at IOM-RAS is the canonical reference; no Cihanşah Hakîkî hit identified in Akimushkin per scholarly survey. NLR St. Petersburg Manuscripts Dept (DIFFERENT institution; probed via Belarus VPN in 2026-05-11 round) returned 15/17 ZERO + 1 FP (Курд. 26 Kurdish 18th-c. namesake).",
       "resolution_feasibility": "Network intermittency may resolve; alternatively Akimushkin 1964 printed catalogue (Russian; out of print but ILL possible) is the canonical substitute",
-      "disposition": "INDIRECTLY_COVERED_VIA_AKIMUSHKIN_1964; no further probing warranted for v1.0.1; IOM-RAS is print-canonical and the printed catalogue is the authoritative source",
+      "disposition": "INDIRECTLY_COVERED_VIA_AKIMUSHKIN_1964; no further probing warranted for v1.1.0; IOM-RAS is print-canonical and the printed catalogue is the authoritative source",
       "v2_relevance": "ILL of Akimushkin 1964 for v2.0 codicology backchain"
     }
   ],
   "summary": {
     "total_gaps_addressed": 9,
     "dispositions": {
-      "OUT_OF_SCOPE_FOR_V1_0_1": 5,
+      "OUT_OF_SCOPE_FOR_V1_1_0": 5,
       "FILLED_VIA_ALTERNATIVE_PATH": 1,
       "DEFERRED_V2_0": 2,
       "INDIRECTLY_COVERED": 1
     },
     "v1_register_impact": "ZERO; no gap requires register modification. 14-entry baseline preserved.",
-    "release_readiness_v1_0_1": "All 10 tool-shaped gaps now have explicit disposition (4 probed via Playwright + 5 OUT_OF_SCOPE_JUSTIFIED + 1 FILLED + 2 DEFERRED_V2_0 + 1 INDIRECTLY_COVERED). Net residual blocker count: 0.",
+    "release_readiness_v1_1_0": "All 10 tool-shaped gaps now have explicit disposition (4 probed via Playwright + 5 OUT_OF_SCOPE_JUSTIFIED + 1 FILLED + 2 DEFERRED_V2_0 + 1 INDIRECTLY_COVERED). Net residual blocker count: 0.",
     "approach_b_completion": "User-selected approach B (Caucasus 3 + CBL + formalize rest) is COMPLETE."
   }
 }

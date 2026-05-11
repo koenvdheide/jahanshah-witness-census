@@ -1,6 +1,6 @@
 # Jahanshah Qaraqoyunlu Manuscript Witness Census
 
-A codicological inventory of manuscript witnesses to the *Dīvān* of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name *Ḥaqīqī* / *Hakîkî*), Qaraqoyunlu ruler-poet. Persian-Turkish bilingual ghazals, *masnavīs*, and tuyughs; transmission extends from 15th-century institutional witnesses through 19th-century Anatolian and Iranian Azerbaijani Alevi shrine copies. v1.0.1 holds 14 catalogued entries (9 verified, 2 attribution-disputed, 1 lost-attested, 2 rejected) plus 10 ancillary reference extracts. The corpus is primarily textual: only 2 of 14 entries have substantive decoration data, and the richest of those (Nuruosmaniye 04281) is attributionally contested. The Decoration and material features section below details what material evidence is and is not present.
+A codicological inventory of manuscript witnesses to the *Dīvān* of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name *Ḥaqīqī* / *Hakîkî*), Qaraqoyunlu ruler-poet. Persian-Turkish bilingual ghazals, *masnavīs*, and tuyughs; transmission extends from 15th-century institutional witnesses through 19th-century Anatolian and Iranian Azerbaijani Alevi shrine copies. v1.1.0 holds 14 catalogued entries (9 verified, 2 attribution-disputed, 1 lost-attested, 2 rejected) plus 10 ancillary reference extracts. The corpus is primarily textual: only 2 of 14 entries have substantive decoration data, and the richest of those (Nuruosmaniye 04281) is attributionally contested. The Decoration and material features section below details what material evidence is and is not present.
 
 Authors:
 
@@ -81,7 +81,7 @@ Witness census combining:
 - Modern-edition source tracing: Hüseyinzade, Rahimov, Recebov, Demirci, Değirmençay, Macit, Alemdârî, Ownuk-Hangeldi (manuscript bases checked; several resolved, several inferred or unrecovered). Three Baku editions, sometimes conflated in prior scholarship, are confirmed here as distinct: 1986 Yazıçı, 2006 Şərq-Qərb (different publisher and editorial team), and 1988 Bakı Arabic-script (for an Iranian-Azerbaijani readership).
 - Field-research literature: Sohrabiabad and Akın 2019 (Alevi shrine corpus); Konyar 1936 (*Diyarbekir Yıllığı* III, ethnographic adjacency).
 
-The Alevi shrine corpus motivated revisiting the search-key matrix in v1.0.1 to cover 9 additional script traditions (Russian Cyrillic, Azerbaijani Latin and Cyrillic, Georgian Mkhedruli, Uzbek Latin and Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) for institutional catalogues in the Russian Federation, Caucasus, Central Asia, and South Asia.
+The Alevi shrine corpus motivated revisiting the search-key matrix in v1.1.0 to cover 9 additional script traditions (Russian Cyrillic, Azerbaijani Latin and Cyrillic, Georgian Mkhedruli, Uzbek Latin and Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) for institutional catalogues in the Russian Federation, Caucasus, Central Asia, and South Asia.
 
 Research-tool disclosure: the search workflow was executed with substantial assistance from large language model coding tools (Anthropic Claude Code, with cross-checks from Google Gemini), used to assist with portal probing, transliteration matrix construction, *mecmûʿa* adjacency analysis, and bibliographic source tracing. All findings and verdicts are sourceable to primary or secondary materials cited in the register entries and the per-session search records; the LLM tools accelerated the surface area covered but do not themselves constitute the evidence base.
 
@@ -104,7 +104,7 @@ Institutions and aggregators consulted:
 
 When a portal's own search could not be reached, the standard recovery sequence was: first the catalogue's search form; then Google's index of the same portal's pages; then the Internet Archive's Wayback Machine for older crawls of the search interface; and finally full-text search of the digitised printed catalogue on the Internet Archive or HathiTrust. Where every online route failed (most Iranian portals; the on-site Tashkent and Dushanbe collections), the per-session records identify in-person consultation or interlibrary loan as the remaining path.
 
-Languages and scripts: search terms were maintained in five base script-tradition groups: modern academic transliteration; modern Turkish (Cihanşah, Cihânşâh, Karakoyunlu Cihanşah Hakîkî); the 19th-century French and German Orientalist forms used by Rieu, Blochet, Pertsch, and their generation; Soviet-Cyrillic Russian and modern Azerbaijani Latin; and Persian Arabic-script (including both the dotted-*yā* and the dotless variant attested in catalogue records). Generic catalogue-context vocabulary such as *mecmua*, *jung*, and *cönk* was searched separately as a cross-check. A v1.0.1 extension added nine further script traditions: modern Russian Cyrillic; modern Azerbaijani Latin and modern Azerbaijani Cyrillic; Soviet-era Azerbaijani Cyrillic; Georgian Mkhedruli; modern Uzbek Latin and Soviet-legacy Uzbek Cyrillic; modern Tajik Cyrillic; Devanagari; and Urdu *nastaʿlīq*. The extension was prompted by the Iranian Azerbaijani Alevi shrine finding and by the wider probe of Russian Federation, Caucasus, Central Asia, and South Asia holdings.
+Languages and scripts: search terms were maintained in five base script-tradition groups: modern academic transliteration; modern Turkish (Cihanşah, Cihânşâh, Karakoyunlu Cihanşah Hakîkî); the 19th-century French and German Orientalist forms used by Rieu, Blochet, Pertsch, and their generation; Soviet-Cyrillic Russian and modern Azerbaijani Latin; and Persian Arabic-script (including both the dotted-*yā* and the dotless variant attested in catalogue records). Generic catalogue-context vocabulary such as *mecmua*, *jung*, and *cönk* was searched separately as a cross-check. A v1.1.0 extension added nine further script traditions: modern Russian Cyrillic; modern Azerbaijani Latin and modern Azerbaijani Cyrillic; Soviet-era Azerbaijani Cyrillic; Georgian Mkhedruli; modern Uzbek Latin and Soviet-legacy Uzbek Cyrillic; modern Tajik Cyrillic; Devanagari; and Urdu *nastaʿlīq*. The extension was prompted by the Iranian Azerbaijani Alevi shrine finding and by the wider probe of Russian Federation, Caucasus, Central Asia, and South Asia holdings.
 
 Printed catalogues and modern editions consulted: the major 19th- and 20th-century manuscript catalogues by Rieu, Blochet, Pertsch, Karatay, Monzavī, Storey, Browne, and Gibb were checked through their digitised copies on Google Books, the Internet Archive, and HathiTrust. The textual edition history was traced through Hüseyinzade (Yerevan 1966); Rahimov, Hüseyinzade and Aliyev (Baku 1986; revised Şərq-Qərb edition 2006); Rahimov and Aliyev (Baku 1988, Arabic-script for an Iranian-Azerbaijani readership); Recebov (Ashgabat 1999); Demirci (the 1997 article in DTCF Türkoloji Dergisi that introduced two Turkish witnesses; the 2001 critical edition); Değirmençay (Erzurum 2004; second edition 2021); Macit (the 2000 Bilig article and the 2002 Grafiker edition of the Turkish poems); Alemdârî (Tehran 2001); and Ownuk and Hangeldi (Ashgabat 2014).
 
@@ -122,8 +122,8 @@ Each register entry carries a `verification_status` from a six-value enum (defin
 
 - [`data/witness_register.json`](data/witness_register.json): the canonical 14-entry register.
 - [`data/spec.md`](data/spec.md): field-by-field description of the register's data format.
-- [`data/search_keys.json`](data/search_keys.json): search-key matrix (5 base script families plus 9 `script_families` extensions added in v1.0.1).
-- [`data/searches/`](data/searches/): 27 search-session records (8 v1.0.0 scope sweeps plus 19 v1.0.1 follow-up searches covering regional probes, cross-checks, and a log of remaining gaps).
+- [`data/search_keys.json`](data/search_keys.json): search-key matrix (5 base script families plus 9 `script_families` extensions added in v1.1.0).
+- [`data/searches/`](data/searches/): 27 search-session records (8 v1.0.0 scope sweeps plus 19 v1.1.0 follow-up searches covering regional probes, cross-checks, and a log of remaining gaps).
 - [`data/tezkire_extracts/`](data/tezkire_extracts/): 5 verbatim *tezkire* entries on Hakîkî (TEIS Yesevi, Macit / Bilig 2000, Yınanç MEB, Konukcu TDV, Câmî *Münşeʾāt*).
 - [`data/research_log/`](data/research_log/): 5 source extracts and methodological assessments (Macit 2000 full extract, Minorsky 1954 codicology recheck, Nuruosmaniye 04281 decoration extract, Sohrabiabad-Akın 2019 witness list, TEIS Yesevi bibliography).
 
@@ -131,7 +131,7 @@ Each register entry carries a `verification_status` from a six-value enum (defin
 
 If you use this dataset, please cite:
 
-> van der Heide, K. & Kazemipourleilabadi, N. (2026). *Jahanshah Qaraqoyunlu Manuscript Witness Census* (Version 1.0.1) [Data set]. Zenodo. <https://doi.org/10.5281/zenodo.20113822>
+> van der Heide, K. & Kazemipourleilabadi, N. (2026). *Jahanshah Qaraqoyunlu Manuscript Witness Census* (Version 1.1.0) [Data set]. Zenodo. <https://doi.org/10.5281/zenodo.20113822>
 
 A `CITATION.cff` file is included; GitHub renders a "Cite this repository" widget from it once indexed.
 

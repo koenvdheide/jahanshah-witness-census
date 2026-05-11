@@ -86,7 +86,7 @@
     "new_secondary_lit_editions_to_add_to_search_keys": 4,
     "ms_witnesses_surfaced_new": 0
   },
-  "v1_0_1_corrections_to_apply": [
+  "v1_1_0_corrections_to_apply": [
     {
       "id": "F-V1-CORRECTION-1",
       "target": "matenadaran_965 register entry + search_keys.json modern_editions_and_studies_for_backchain",

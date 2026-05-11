@@ -3,8 +3,8 @@
   "session_label": "Roll-up summary: 6 Gemini-recommended new-witness-discovery avenues + Digital Orientalist 2023 residual closure",
   "session_id": "avenues-rollup-2026-05-11",
   "date": "2026-05-11",
-  "scope": "Synthesis across the 5 per-avenue probe artifacts produced this round (Caucasus main-context, South Asia subagent A, Central Asia/Russia/Yerevan subagent B, Ottoman provincial/Sufi main-context replacing failed subagent C, DO 2023 residual closure subagent D). Documents total reach, witness yield, v2.0 scope additions, methodological findings, and v1.0.1 release-candidate readiness.",
-  "parent_context": "Builds on v1.0.0 deposit at GitHub HEAD 8baca71. v1.0.0 witness_register.json has 14 active entries + 2 rejected (both Baku-related). This roll-up is the v1.0.1 release candidate batch.",
+  "scope": "Synthesis across the 5 per-avenue probe artifacts produced this round (Caucasus main-context, South Asia subagent A, Central Asia/Russia/Yerevan subagent B, Ottoman provincial/Sufi main-context replacing failed subagent C, DO 2023 residual closure subagent D). Documents total reach, witness yield, v2.0 scope additions, methodological findings, and v1.1.0 release-candidate readiness.",
+  "parent_context": "Builds on v1.0.0 deposit at GitHub HEAD 8baca71. v1.0.0 witness_register.json has 14 active entries + 2 rejected (both Baku-related). This roll-up is the v1.1.0 release candidate batch.",
   "geopolitical_caveat": "Iranian wartime intermittent shutdowns affect Iranian portal reachability (NLAI, Tehran U utdlib, Astan-e Quds, Malek, Majles, lib.eshia.ir, ketab.ir). Az/Geo/Am Caucasus portals are not affected. VPN was OFF during this round; results reflect direct US/UK routing.",
   "artifacts_produced": [
     {"avenue": "1 Caucasus", "file": "data/searches/probe_2026-05-11_avenue_caucasus_maincontext.json", "portals": 6, "method": "main-context WebFetch + WebSearch + scholarly trail triangulation"},
@@ -88,6 +88,6 @@
       "(yazmalar.gov.tr residual gap FALSIFIED post-rollup-write by 2026-05-11 Ottoman chunk C1; portal is DEFINITIVELY DEAD, not cert-walled; nginx 404 across all paths after TLS bypass; ZERO Wayback snapshots; operational catalogue is portal.yek.gov.tr already covered by v1.0 yek-search agent. See data/searches/probe_2026-05-11_ottoman_chunks_synthesis.json residual_gaps_revised block for current authoritative gap list.)"
     ],
     "ottoman_chunks_deep_probe_addendum": "After this rollup was written, the Ottoman avenue was DEEPENED via 4 chunked parallel subagents (data/searches/probe_2026-05-11_ottoman_chunk{1,2,3,4}_*.json + data/searches/probe_2026-05-11_ottoman_chunks_synthesis.json). Cumulative additions: 6 Yusuf Hakîkî MSS audit (Konya cluster + Süleymaniye Hacı Mahmud Efendi sub-collection); 2 new FP classes (Cihan Şah honorific-dedicatory-frame; Anatolian aşık-tradition Hakîkî re-classification); ISAM T811.225/T811.215 call-number disambiguation system; Google-false-negative-class-on-Yordam methodological finding; Değirmençay 2021 v2.0 edition; Diyanet Hurufi text id 931 v2.0 mecmûʿa-mining lead. Net Ottoman avenue Cihanşah witnesses: 0; v1.0 14-entry register impact: 0.",
-    "user_action_pending": "User performs final git push + Zenodo publish per CLAUDE.md Public-Facing Publishing rule. Per user prior direction: 'After avenue probes (batch into one release)' = batch all 2026-05-11 work as v1.0.1."
+    "user_action_pending": "User performs final git push + Zenodo publish per CLAUDE.md Public-Facing Publishing rule. Per user prior direction: 'After avenue probes (batch into one release)' = batch all 2026-05-11 work as v1.1.0."
   }
 }
