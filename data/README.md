@@ -42,7 +42,7 @@ For each witness, decoration / paper / illumination data is captured when access
 | `spec.md` | Witness register JSON schema (v1) reference: field-by-field documentation with example entry. |
 | `search_keys.json` | 5-family search-key matrix (modern Latin / 19th-c. Orientalist / Soviet-Cyrillic / Arabic-script / catalogue-context) covering Persian, Turkish, Ottoman Turkish, and Azerbaijani Turkic forms |
 | `witness_register.json` | Merged deduplicated witness list. Authoritative artifact. |
-| `searches/search_YYYY-MM-DD_<scope>.json` | Per-search-session JSON output (8 files) |
+| `searches/*.json` | Per-search-session JSONs and follow-on probe / crosscheck / gap-disposition artifacts (8 v1.0.0 scope searches plus 19 v1.0.1 follow-on artifacts; 27 files total at v1.0.1) |
 | `tezkire_extracts/<tezkire_name>_haqiqi.md` | Tezkire and reference extracts on Hakîkî (5 files) |
 | `research_log/` | Archived source extracts and methodological assessments (5 files) |
 

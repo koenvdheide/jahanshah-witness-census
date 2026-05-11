@@ -27,7 +27,7 @@ A codicological inventory of manuscript witnesses to the *Dīvān* of **Jahansha
   - `witness_register.json`: 14-entry register with verification status per witness
   - `search_keys.json`: 5-family search-key matrix (modern Latin / 19th-c. Orientalist / Soviet-Cyrillic / Arabic-script / catalogue-context) covering Persian, Turkish, Ottoman Turkish, and Azerbaijani Turkic forms
   - `spec.md`: witness register JSON schema (v1) reference
-  - `searches/`: per-scope search session JSONs (8 files: UK/European, Turkey/Anatolia, Iran/Caucasus, mecmûʿa-Nesîmî adjacency, tezkire, auctions, catalogue/scribe/edition backchain, South Asian/global)
+  - `searches/`: per-scope search session JSONs across 8 v1.0.0 scopes (UK/European, Turkey/Anatolia, Iran/Caucasus, mecmûʿa-Nesîmî adjacency, tezkire, auctions, catalogue/scribe/edition backchain, South Asian/global), plus v1.0.1 follow-on probe, crosscheck, and gap-disposition artifacts (27 files total at v1.0.1)
   - `tezkire_extracts/`: verbatim *tezkire* entries on Hakîkî (5 entries: TEIS Yesevi, Macit/Bilig 2000, Yınanç MEB, Konukcu TDV, Câmî Münşeʾāt)
   - `research_log/`: archived source extracts and methodological assessments (5 files: Macit 2000 full extract, Minorsky 1954 codicology recheck, Nuruosmaniye 04281 decoration extract, Sohrabiabad-Akın 2019 witness list, TEIS Yesevi bibliography 2026-05-02)
   - `README.md`: methodology overview and file conventions
