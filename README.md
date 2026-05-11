@@ -82,6 +82,33 @@ Witness census combining:
 
 The Alevi shrine corpus motivated revisiting the search-key matrix in v1.0.1 with a `script_families` block covering 9 additional script traditions (Russian Cyrillic, Az Latin and Cyrillic, Georgian Mkhedruli, Uzbek Latin and Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) for institutional catalogues in the Russian Federation, Caucasus, Central Asia, and South Asia.
 
+## Search depth and breadth
+
+[`data/searches/`](data/searches/) holds 27 search-session JSONs across two waves: 8 v1.0.0 scope sweeps (2026-05-02) plus 19 v1.0.1 follow-on probes (2026-05-10 and 2026-05-11) covering institutional catalogue rediscovery, a 9-Iranian-portal reachability retest, the Marashi and Tehran follow-up, six Gemini-recommended new-discovery avenues (Caucasus, Russia, Central Asia, South Asia, provincial Ottoman, Sufi tekke), four chunked Ottoman deep-probes, the 2023 Digital Orientalist article cross-check, a 9-tool-shaped-gap formalisation, and individual follow-ups.
+
+Geographic and institutional reach:
+
+- UK and Anglosphere: Fihrist (BL, Bodleian, Cambridge, John Rylands, others).
+- German-speaking world: Qalamos (BBAW Berlin, BSB Munich, ÖNB Vienna, ULB Halle MENA-DOC, SUB Hamburg, UB Tübingen, UB Leipzig).
+- Turkey: portal.yek.gov.tr, Milli Kütüphane Ankara, ISAM Yordam, TEIS Yesevi, Islamisation of Anatolia DB, Diyanet İslam Ansiklopedisi. yazmalar.gov.tr was confirmed dead in v1.0.1 (nginx 404 across all paths after TLS bypass, zero Wayback snapshots).
+- Iran: NLAI, Tehran University, Majlis Library, Astan-e Quds Razavi, Marashi-Najafi (Qom), Bonyad-i Muhaqqiq Tabataba'i (mtif.org), Malek National Library, lib.eshia.ir, ketab.ir; all 9 portals geo-IP gated or bot-blocked under direct US/UK routing. Recovery via printed-edition OCR (Internet Archive), Digital Orientalist 2023 article cross-check, authenticated TEIS Yesevi consultation, and Russian-Cyrillic indexing of Iranian Azerbaijani holdings via the v1.0.1 `script_families` block.
+- Caucasus: Matenadaran (Yerevan), Azerbaijan National Library (ek.anl.az, Baku), manuscript.az (AMEA Baku), manuscript.ge (Tbilisi), Kekelidze Institute of Manuscripts.
+- Russian Federation: orientalmanuscripts.ru (IOM-RAS St. Petersburg), RSL Moscow, KFU Kazan, Tatknigafund.
+- Central Asia: Beruni Institute of Oriental Studies (Tashkent), Tajik National Library (Dushanbe), Rudaki Institute of Language and Literature (Dushanbe).
+- South Asia: Salar Jung Museum & Library (Hyderabad), Khuda Bakhsh (Patna), Rampur Raza Library, Asiatic Society Kolkata, NAMAMI / Kriti Sampada, Aligarh Muslim University Maulana Azad Library.
+- Global aggregators: HMML, WorldCat, Al-Furqan, EAP (BL Endangered Archives), DLME, OPenn, HathiTrust, Internet Archive, Wayback Machine.
+- Auction houses: Christie's, Sotheby's, Bonhams.
+
+Per-portal escalation when direct queries fail: WebFetch on the catalogue search endpoint; site-restricted Google on the portal domain; Wayback Machine snapshots of historical search URLs; printed-catalogue OCR via Internet Archive / HathiTrust *djvu.txt*; in-person or ILL escalation noted as the documented recovery path. Per-portal outcomes (including superseded diagnoses, e.g. yazmalar.gov.tr initially recorded as "cert-walled" then falsified to "dead") are tracked in `data/searches/probe_*` files.
+
+Linguistic and script-family depth: 5 base script families in [`data/search_keys.json`](data/search_keys.json) (modern academic Latin; 19th-c. Orientalist French and German; Soviet-Cyrillic Russian and modern Azerbaijani Latin; Arabic-script Persian with dotted-yā / dotless-ya variants; catalogue-context terms including *mecmua* / *jung* / *cönk*) plus a v1.0.1 `script_families` block of 9 additional traditions (Russian Cyrillic modern, Az Latin and Cyrillic modern, Az Cyrillic Soviet legacy, Georgian Mkhedruli, Uzbek Latin and Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq).
+
+Bibliographic backchain: 19th- and 20th-century printed catalogues by Rieu, Blochet, Pertsch, Karatay, Monzavī, Storey, Browne, and Gibb OCR-grepped through Google Books / Internet Archive / HathiTrust. Modern editor bases by Hüseyinzade (Yerevan 1966), Rahimov, Hüseyinzade and Aliyev (Bakı 1986; Şərq-Qərb 2006), Rahimov and Aliyev (Bakı 1988 Arabic-script), Recebov (Ashgabat 1999), Demirci (DTCF 1997 article; Köksav 2001 edition), Değirmençay (Erzurum 2004 and 2021), Macit (Bilig 2000; Grafiker 2002), Alemdârî (Fîrûzân 2001), and Ownuk and Hangeldi (Ashgabat 2014) checked against the surfaced register.
+
+Per-hit disambiguation: every Hakîkî match was tested against the Yusuf Hakîkî Bursavi homonym (d. 893 AH / 1487 CE; Ottoman Bursa Bektashi-Hurufi) and other namesakes using the date filter (Cihanşah d. 872 AH / 1467 CE), the Persian-Turkic bilingual content cluster (Cihanşah vs Ottoman-only Yusuf), and the Hurufi-cluster textual-adjacency diagnostic empirically grounded against Ankara MK A 5252.
+
+Notable negative results: zero direct Jahānshāh witnesses surfaced from auction archives (the corpus is 100% institutional or private-archive); zero hits at NLAI, Majlis, Tashkent, or Dushanbe under in-scope search keys (portals geo-IP gated, on-premises catalogues, or both); Marashi-Najafi institutional catalogue is printed-only (Fihrist 30 / 60 vols, no online OPAC); the AzerTAC 2012 announcement that Alemdârî's 2001 edition contains "photographic reproductions" of Tehran 8198 was falsified by primary-text retrieval (Alemdârî 2001 is 320pp typeset, zero plates).
+
 ## Verification status and audit trail
 
 Each register entry carries a `verification_status` from a six-value enum (defined in [`data/spec.md`](data/spec.md)): `verified`, `verified_with_attribution_caveat`, `candidate_probably_non_cihansah`, `candidate_probably_yusuf_hakiki_or_other_homonym`, `lost_witness_attested_only`, `rejected`. Per-status counts live in [`data/witness_register.json`](data/witness_register.json) `stats.by_verification`.
