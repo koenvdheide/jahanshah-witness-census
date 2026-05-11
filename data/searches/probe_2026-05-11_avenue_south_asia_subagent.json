@@ -7,13 +7,13 @@
   "scope": "Probe South Asian institutional manuscript catalogues (Salar Jung, Rampur Raza, Khuda Bakhsh, Asiatic Society Kolkata, NAMAMI/Kriti Sampada, Aligarh Maulana Azad Library) for any witness of the Divan of Cihansah Qaraqoyunlu / Hakiki (d. 872 AH / 1467 CE). Apply Yusuf Hakiki Bursavi (d. 893 AH / 1487 CE) homonym disambiguation per-hit.",
   "method_summary": {
     "tier_1_landing_page_probes": "WebFetch against each portal landing page to identify the manuscript-catalogue search endpoint and its query URL pattern.",
-    "tier_2_search_endpoint_probing": "WebFetch / WebSearch against each portal's search endpoint with the v1.0 Cihansah / Hakiki / Haqiqi / Karakoyunlu / Jahanshah query battery in Latin script, plus Arabic-Persian-script and Urdu nastaliq variants per search_keys_extended_2026-05-11.json (urdu_nastaliq_south_asian and devanagari_south_asian families).",
+    "tier_2_search_endpoint_probing": "WebFetch / WebSearch against each portal's search endpoint with the v1.0 Cihansah / Hakiki / Haqiqi / Karakoyunlu / Jahanshah query battery in Latin script, plus Arabic-Persian-script and Urdu nastaliq variants per search_keys.json script_families block (urdu_nastaliq_south_asian and devanagari_south_asian families).",
     "tier_3_printed_catalogue_fallback": "When portal search interfaces were unreachable (geo-IP blocked, certificate-expired, ECONNREFUSED, or JS-only SPAs), pivoted to full-text OCR grep of the printed catalogue volumes for each repository on Internet Archive: a Python urllib + regex pipeline downloaded each catalogue's djvu.txt and grepped the v1.0 + v1.0-extended search-key battery.",
     "tier_4_OCR_quality_audit": "Each grep run included a QA pass against 12-14 known-good poet/dynasty names (Hafiz, Nizami, Rumi, Sadi, Jami, Babur, Timur, Aq Quyunlu, Kara Yusuf, Karakoyunlu, Pir Budaq, etc.) to validate that the OCR is healthy enough that zero matches for our query terms is genuine absence rather than OCR failure."
   },
   "search_key_families_applied": {
     "from_search_keys_json_v1": ["modern_academic_latin", "nineteenth_century_orientalist (french + german)", "arabic_script (preferred + variants)", "title_forms (Dīvān, Dīwān, Divan, Külliyāt)"],
-    "from_search_keys_extended_2026-05-11": ["urdu_nastaliq_south_asian (Cihansah jhng vs jh n, plus do-chashmi he ہ vs Persian he ه, Urdu yeh ی vs Arabic yeh ي)", "devanagari_south_asian (with and without nukta)"],
+    "from_search_keys_script_families": ["urdu_nastaliq_south_asian (Cihansah jhng vs jh n, plus do-chashmi he ہ vs Persian he ه, Urdu yeh ی vs Arabic yeh ي)", "devanagari_south_asian (with and without nukta)"],
     "homonym_disambiguation_applied_per_hit": "Yusuf Hakiki Bursavi (d. 893 AH / 1487 CE; Bursa-based, Bektashi-Hurufi) vs. Cihansah Hakiki (d. 872 AH / 1467 CE; Tabriz-based Qaraqoyunlu padishah). Date filter, geographic context cluster, and content language signals applied."
   },
   "portals": [

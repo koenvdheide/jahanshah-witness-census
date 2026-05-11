@@ -89,7 +89,7 @@
       "The prior probe's flagged gap 'yazmalar.gov.tr Playwright cert-ignore pass + direct search-form exercise' is FALSIFIED. No live search form exists behind the cert; bypassing the cert reveals nginx 404 on every path. No further Playwright work on this domain will yield results."
     ],
     "residual_gaps_remaining": [
-      "portal.yek.gov.tr queries with the 9 extended-script-family variants from data/search_keys_extended_2026-05-11.json (Russian Cyrillic, Az Latin, Az Cyrillic, Georgian, Uzbek Latin, Uzbek Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) have not been exhausted; these are operational queries belonging in chunks 2-4 or in a portal.yek.gov.tr-focused v2.0 sweep, NOT in chunk 1's URL-resolution scope."
+      "portal.yek.gov.tr queries with the 9 extended-script-family variants from data/search_keys.json script_families block (Russian Cyrillic, Az Latin, Az Cyrillic, Georgian, Uzbek Latin, Uzbek Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) have not been exhausted; these are operational queries belonging in chunks 2-4 or in a portal.yek.gov.tr-focused v2.0 sweep, NOT in chunk 1's URL-resolution scope."
     ],
     "v1_register_impact": "ZERO new witnesses. The chunk-1 finding resolves and CLOSES the residual gap on yazmalar.gov.tr by demonstrating the portal is abandoned, not blocked. No witnesses move into or out of the v1.0 register as a result of this chunk."
   },

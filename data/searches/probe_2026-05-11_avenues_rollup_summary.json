@@ -81,7 +81,7 @@
       "data/searches/probe_2026-05-11_avenue_provincial_ottoman_sufi_maincontext.json",
       "data/searches/probe_2026-05-11_do2023_residual_closure_subagent.json",
       "data/searches/probe_2026-05-11_avenues_rollup_summary.json",
-      "data/search_keys_extended_2026-05-11.json (Phase 0 artifact)",
+      "data/search_keys.json (script_families block; Phase 0 artifact, merged from former data/search_keys_extended_2026-05-11.json)",
       "data/witness_register.json (matenadaran_965 augmentation only)"
     ],
     "release_blocker_residual_gaps": [
