@@ -50,7 +50,7 @@ The Alevi shrine corpus (Diyarbakır Ulutürk *cönk* in the Anatolian *Ocak* tr
 
 If you use this dataset, please cite:
 
-> van der Heide, K. & Kazemipourleilabadi, N. (2026). *Cihānşāh Qaraqoyunlu (Hakîkî) Manuscript Witness Census* (Version 1.0.0) [Data set]. Zenodo. *DOI to be added once the first Zenodo release mints it.*
+> van der Heide, K. & Kazemipourleilabadi, N. (2026). *Cihānşāh Qaraqoyunlu (Hakîkî) Manuscript Witness Census* (Version 1.0.1) [Data set]. Zenodo. *DOI to be added once the Zenodo release mints it.*
 
 A `CITATION.cff` file is included; GitHub renders a "Cite this repository" widget from it once indexed.
 

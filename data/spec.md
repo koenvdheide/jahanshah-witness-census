@@ -114,7 +114,7 @@ The terminal-state enum has six values:
 | `lost_witness_attested_only` | 1 | Witness attested in scholarly literature but no longer extant or no longer locatable. |
 | `rejected` | 2 | Investigated and dismissed; audit-preserved with explicit `rejection_reason` plus a `rejection_type` sub-classification (`derivative_surrogate` or `non_manuscript_misidentification`; see extension fields above). **Inclusion criterion**: only candidates cited in published scholarship or acquired as Cihānşāh witnesses by a major institution appear here. Routine search false-positives live in per-session JSONs under `data/searches/`. |
 
-`pending` is a transient state allowed during execution. At the v1.0.0 publication state, no entry carries `pending`.
+`pending` is a transient state allowed during execution. At publication, no entry carries `pending`.
 
 ## Stats block
 
