@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated": "2026-05-02",
+  "generated": "2026-05-11",
   "purpose": "Authoritative witness register for the Ḥaqīqī / Hakîkî (Jahānshāh Qaraqoyunlu) manuscript census. Research-only; not corpus-integrated. See README.md for scope and methodology.",
   "rejection_inclusion_criterion": "The two `rejected` entries below are audit-preserved rebuttals to specific claims that have appeared in published scholarship or in a major institutional acquisition announcement. Routine search false-positives (e.g., name-collision noise, namesake disambiguations, body-text matches in WordPress catalogues) are documented in the per-session JSONs under `data/searches/` and are not promoted to the register. Both rejected entries here address one underlying question, namely whether Baku holds an independent Cihānşāh codex; both answer that question in the negative with two independent strands of evidence. Each rejected entry carries a `rejection_type` sub-classification: `derivative_surrogate` (the entry is a copy/microfilm/photocopy of an existing witness and would double-count it if included) or `non_manuscript_misidentification` (the entry was never an independent manuscript, e.g. a printed edition once mistakenly absorbed as a witness).",
   "candidate_inclusion_criterion": "The `candidate_probably_*` entries below are retained when the source catalogue's attribution was Hakîkî-ambiguous and required disambiguation work to assign a verdict (e.g., mecmûʿa-adjacency layout analysis; Mu'in V.961-962 multi-Hakîkî reference + Ottoman-date prior; folio-count anomaly). Codices where Hakîkî identity was clear at the catalogue level (e.g., explicitly catalogued as Yusuf Hakîkî) or contextually obvious (Cihan Şah honorific frames, Anatolian aşık-tradition Hakîkîs, name-collision noise) are tracked in per-session probe artifacts under `data/searches/`, not promoted to the register. Like the rejection_inclusion_criterion above, this preserves the audit trail of which candidates required substantive analytical work to dismiss.",
@@ -650,7 +650,7 @@
       "country": "Turkey",
       "date_ah": "1088",
       "date_ce": "1677/78",
-      "scribe": null,
+      "scribe": "Jahanshah b. Baba Gejelu (جهانشاه بن بابا گجلو); Muḥarram 1088 AH / March-April 1677 CE per colophon, IIIF p. 331",
       "languages": [
         "Persian"
       ],
@@ -676,34 +676,55 @@
       },
       "scholarly_attestation": [],
       "discovery_source": "Source-reverification 2026-05-02 via authenticated YEK AllFields search 'Cihansah' followed by detail-page lookup. NOT surfaced by earlier YEK title/author/notes searches because the codex is catalogued only as 'Dîvân' with attribution implicit in the Mu'in reference.",
-      "verification_status": "candidate_probably_yusuf_hakiki_or_other_homonym",
-      "verification_caveat": "326 folios is far larger than any of the 5 TEIS Yesevi Cihanşah Hakîkî witnesses (BL Or 9493 = 85, Mat 965 = 54, Süleymaniye Fatih 3808 = 107, Tehran 8198 = 133-143, DTCF I/2221 = 26). The 1088 AH (1677/78 CE) Ottoman date is 200+ years after Cihanşah and falls in a period when Yusuf Hakîkî (Aksaray Sufi, d. 880/1475) was extensively copied in Ottoman scriptoria but Cihanşah was NOT. Mu'in's V.961-962 entry covers MULTIPLE Hakîkîs sharing contiguous lexicon entries. Strong prior probability that this is Yusuf Hakîkî's divan, not Cihanşah's.",
+      "verification_status": "rejected",
+      "verification_caveat": "326 folios is far larger than any of the 5 TEIS Yesevi Cihanşah Hakîkî witnesses (BL Or 9493 = 85, Mat 965 = 54, Süleymaniye Fatih 3808 = 107, Tehran 8198 = 133-143, DTCF I/2221 = 26). The 1088 AH (1677/78 CE) Ottoman date is 200+ years after Cihanşah and falls in a period when Yusuf Hakîkî (Aksaray Sufi, d. 880/1475) was extensively copied in Ottoman scriptoria but Cihanşah was NOT. Mu'in's V.961-962 entry covers MULTIPLE Hakîkîs sharing contiguous lexicon entries. Strong prior probability that this is Yusuf Hakîkî's divan, not Cihanşah's.\n\nRECLASSIFIED 2026-05-11 from candidate_probably_yusuf_hakiki_or_other_homonym to rejected on the basis of direct colophon reading (visual-confirmation pass against IIIF p. 331). The colophon-derived scribe identification plus the four-fold convergent disconfirmation made the rejection decisive. See rejection_reason and colophon fields for evidence.",
       "decoration_data_value_for_or_9493_question": "LOW. Even if this turns out to be a Cihanşah witness, the 1677 Ottoman date + Ottoman shemse cilt aesthetic places it firmly outside the Karakoyunlu/Aq Qoyunlu comparator window. Codicologically irrelevant as a comparator for BL Or 9493's 1488 Tabriz-era paper question.",
       "yek_authenticated_recovery_method": "Authenticated YEK detail-page lookup for shelfmark 178787",
-      "notes": "Recovered via authenticated YEK lookup: prior title/author searches on 'Cihansah' / 'Hakiki' returned nothing; authenticated AllFields search surfaced it. Definitive disambiguation requires reading Mu'in Ferheng-i Fârsī V.961-962 to determine whether the cataloguer's reference points to Cihanşah or Yusuf Hakîkî. ILL or in-person Süleymaniye visit needed for f. 1a image confirmation (YEK reports has_digitized_images=false; prior project notes indicate this YEK field is unreliable for Nuruosmaniye)."
+      "notes": "Audit-trail entry. Codex confirmed to be a 326-folio Persian Dīvān copied AH 1088 / CE 1677-78 by an Anatolian Alevi-Bektaşi tekke scribe named Jahanshah b. Baba Gejelu, whose given name plausibly commemorates the ruler-poet (a venerated figure in Alevi-Bektaşi literary genealogy) without indicating authorial identity. The YEK cataloguer's Muʿin Ferheng-i Farsi V.961-962 reference is an attribution error driven by the scribal-name homonym. The codex is by some other author, most plausibly Yusuf Hakiki Baba of Aksaray given the mufradat opening, the Bektaşi-Alevi profile of the scribe, and the 17th-century Ottoman copying-Yusuf-Hakiki context. Definitive identification of the underlying author would require textual collation against published Yusuf Hakiki Divan editions (Boz 2009; Çavuşoğlu 2009 for Mahabbet-name) and is out of v1.x poetry-witness-census scope since the codex is decisively not a Cihanshah Qaraqoyunlu witness. Retained at verification_status=rejected so future researchers and reviewers see this attribution was considered, evidenced, and ruled out. The decoration data (paper, binding, seals) captured during prior verification work is preserved in the decoration field as audit material; it pertains to a non-Cihanshah codex and is not Cihanshah-corpus decoration data.",
+      "rejection_type": "scribal_homonym_misidentification",
+      "rejection_reason": "Colophon (IIIF p. 331) names the scribe as Jahanshah b. Baba Gejelu (جهانشاه بن بابا گجلو), dated Muharram 1088 AH (March-April 1677 CE). No author is named anywhere in the codex's incipit, colophon, or section headings. The YEK cataloguer's reference to Muʿin Ferheng-i Farsi V.961-962 is an attribution error driven by the scribal-name homonym: the cataloguer treated 'Cihanshah' in the colophon as authorial and reached for the poet-biographical appendix. Cihanshah Qaraqoyunlu attribution is decisively excluded by four independent lines of evidence: (1) Codicological size impossibility - 326 folios cannot accommodate Cihanshah's documented 224-poem corpus (105 Persian + 87 Turkish ghazals + 32 Turkish rubaʿis per TEIS Yesevi); the five verified Cihanshah witnesses span 26-143 folios. (2) Genre mismatch - opening folios 1b-3a contain 33+ mufradat (single-bayt epigrams), a genre with no presence in Cihanshah's documented corpus. (3) Temporal and contextual distance - 210 years after Cihanshah's death, in an Ottoman scriptorium during the period when Yusuf Hakiki Baba's Sufi material was being extensively copied; the scribe Jahanshah b. Baba Gejelu profiles as an Anatolian Alevi-Bektaşi tekke copyist (per the Baba patronymic + Shia-inflected colophon formula 'wa-alihi al-amjad' omitting the Sunni 'wa-sahbihi'), exactly the demographic that preserved Yusuf Hakiki, not the demographic that produced Karakoyunlu courtly transmission. (4) Authorial silence in the codex itself - the only 'Cihanshah' signal is the scribe's given name, plausibly bestowed in Alevi commemorative-naming honor of the ruler-poet (a venerated figure in Alevi-Bektaşi literary genealogy) rather than indicating authorial identity.",
+      "colophon": {
+        "iiif_page": 331,
+        "iiif_manifest": "https://portal.yek.gov.tr/iiif/2/0000000164151/manifest",
+        "transcription_arabic": "قد اتفق الفراغ من تسويد هذه النسخة الشريفة في تاريخ شهر الأول عن سنة الثامن من عشر التاسع عن مأة الأول من ألف الثاني فمن الهجرة النبوية المصطفوية على يد العبد الضعيف المحتاج بعنايات الله جهانشاه بن بابا گجلو عفو ذنوبه وستر عيوبه بحق محمد وآله الأمجاد سنه ١٠٨٨",
+        "transcription_translit": "qad ittafaqa al-farāgh min taswīd hādhihi al-nuskha al-sharīfa fī tārīkh shahr al-awwal ʿan sanat al-thāmin min ʿashr al-tāsiʿ ʿan miʾat al-awwal min alf al-thānī fa-min al-hijra al-nabawiyya al-muṣṭafawiyya ʿalā yad al-ʿabd al-ḍaʿīf al-muḥtāj bi-ʿināyāt Allāh Jahānshāh b. Bābā Gejelū ʿafw dhunūbihi wa-satr ʿuyūbihi bi-ḥaqq Muḥammad wa-ālihi al-amjād sene 1088",
+        "translation_english": "It came to pass that the drafting of this noble copy was completed in the first month [Muḥarram], in the year [composed as] the eighth of the ninth decade, of the first hundred, of the second millennium of the Prophetic, Chosen Hijra, by the hand of the weak servant in need of God's solicitudes, Jahānshāh son of Bābā Gejelū - may his sins be forgiven and his faults concealed, by the right of Muḥammad and his glorious family. Year 1088.",
+        "scribe_name_arabic": "جهانشاه بن بابا گجلو",
+        "scribe_name_translit": "Jahānshāh b. Bābā Gejelū",
+        "date_completion_ah": "Muḥarram 1088",
+        "date_completion_ce_julian": "approximately 4 March - 2 April 1677",
+        "date_completion_ce_gregorian": "approximately 14 March - 12 April 1677",
+        "place_of_copying_named": null,
+        "patron_named": null,
+        "author_of_underlying_text_named": null,
+        "religious_formula_note": "Closing invocation 'wa-ālihi al-amjād' (and his glorious family) omits the standard Sunni 'wa-ṣaḥbihi' (and his companions). The Prophet's family-without-companions formula is characteristic of Shia/Alevi-inflected piety, consistent with the Bektaşi-Alevi tekke profile suggested by the scribe's Baba-titled father.",
+        "date_chronogram_note": "The year 1088 is given twice in the colophon: first as a paratextual chronogram (the eighth of the ninth decade, of the first hundred, of the second millennium of the Hijra = 8 + 80 + 1000 = 1088), then repeated in plain numerals as ١٠٨٨. This doubled date is characteristic of literate scribes who valued formal colophon paratexts.",
+        "palaeographic_notes": "Scribe-name palaeography: the patronymic is بابا (Bābā, with terminal alif after the second bāʾ), not باب (Bāb). The tribal nisba is گجلو (Gejelū / Gechelū): kāf-with-stroke = gāf, then jīm, lām, wāw. NOT قاجارلو (Qājārlū / Qajar tribal) and NOT گچلو (Gachalū).",
+        "recovery_method": "Direct read of IIIF p. 331 native-resolution image, visual-confirmation pass 2026-05-11. Working transcription and crops produced in a parallel research project; colophon transcription and translation captured inline in this register for audit-trail preservation."
+      }
     }
   ],
   "stats": {
-    "total_witnesses_active": 12,
+    "total_witnesses_active": 11,
     "total_entries_including_rejected_and_lost": 14,
     "by_verification": {
       "verified": 8,
       "verified_with_attribution_caveat": 1,
       "candidate_probably_non_cihansah": 1,
-      "candidate_probably_yusuf_hakiki_or_other_homonym": 1,
+      "candidate_probably_yusuf_hakiki_or_other_homonym": 0,
       "lost_witness_attested_only": 1,
-      "rejected": 2,
+      "rejected": 3,
       "pending": 0
     },
     "by_completeness": {
-      "complete": 6,
+      "complete": 5,
       "fragment_or_excerpt": 1,
       "fragment": 4,
       "unknown": 1
     },
     "by_country": {
       "UK": 1,
-      "Turkey": 7,
+      "Turkey": 6,
       "Armenia": 1,
       "Iran": 3
     }
