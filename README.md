@@ -1,6 +1,6 @@
 # Jahanshah Qaraqoyunlu Manuscript Witness Census
 
-A codicological inventory of manuscript witnesses to the *Dīvān* of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name *Ḥaqīqī* / *Hakîkî*), Qaraqoyunlu ruler-poet. Persian-Turkish bilingual ghazals, *masnavīs*, and tuyughs; transmission extends from 15th-century institutional witnesses through 19th-century Anatolian and Iranian Azerbaijani Alevi shrine copies. v1.0.1 holds 14 catalogued entries (9 verified, 2 attribution-disputed, 1 lost-attested, 2 rejected) plus 10 ancillary reference extracts.
+A codicological inventory of manuscript witnesses to the *Dīvān* of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name *Ḥaqīqī* / *Hakîkî*), Qaraqoyunlu ruler-poet. Persian-Turkish bilingual ghazals, *masnavīs*, and tuyughs; transmission extends from 15th-century institutional witnesses through 19th-century Anatolian and Iranian Azerbaijani Alevi shrine copies. v1.0.1 holds 14 catalogued entries (9 verified, 2 attribution-disputed, 1 lost-attested, 2 rejected) plus 10 ancillary reference extracts. The corpus is primarily textual: only 2 of 14 entries have substantive decoration data, and the richest of those (Nuruosmaniye 04281) is attributionally contested. The Decoration and material features section below details what material evidence is and is not present.
 
 Authors:
 
@@ -43,10 +43,11 @@ Diyarbakır Ulutürk *cönk*. Documented in the field 2016 by Bülent Akın; pub
 
 ## Findings
 
-Two structural findings emerge from the audit:
+Three structural findings emerge from the audit:
 
 1. Two textual groups by reported contents. Group A (fuller, with *masnavīs*): Matenadaran 965, Tehran University 8198, Süleymaniye Fatih 3808. Group B (without *masnavīs*): BL Or 9493. Jāmī's contemporary *Münşeʾāt* describes Cihānşāh's lifetime divan as containing both ghazals and *masnavīs*, making the *masnavī*-bearing form conservative for the lifetime layer. Caveats: no direct stemmatic collation has been performed. The exact contents of Matenadaran 965 versus Süleymaniye Fatih 3808 are also unconfirmed, since the catalogue listings for the latter are suspected to be generic placeholder descriptions.
 2. The Alevi shrine corpus extends the textual range. Anatolian and Iranian Azerbaijani *Ocak* lineages have preserved eleven ghazals not present in the institutional editions examined (eight from Diyarbakır Ulutürk, three from Ilkhchi *cem cönks*) plus a complete divan codex in the Ilkhchi Kırklar Ocağı pirs' archive that has not yet been examined by scholars outside the shrine community.
+3. The geographic distribution is Ottoman-leaning rather than Turkmen-centred. Seven of the 14 entries are held in Turkey, one in Armenia, three in Iran (Tehran University plus two Iranian Azerbaijani shrine archives), and one in the UK. The Turkmen-Tabriz milieu of Cihanşah's own lifetime is largely absent from the surviving witnesses: BL Or 9493 (1488, Isfahan-scribed) and Matenadaran 965 (1474-75, Yerevan) are the closest 15th-century witnesses, while the bulk of the corpus reflects later Ottoman and Anatolian-Alevi transmission rather than the Tabrizi-Turkmen court literature that Cihanşah originally produced.
 
 ## Decoration and material features
 
@@ -73,14 +74,18 @@ Witness census combining:
 
 - Aggregator sweeps: Fihrist (UK), Qalamos (German-speaking world), Al-Furqan (Islamic-mss union gateway), YEK portal (Turkey), NLAI / Majlis / DENA-FANKHA (Iran), Matenadaran (Armenia), Islamisation of Anatolia DB, Salar Jung / Khuda Bakhsh / Rampur Raza (South Asia), HMML / WorldCat (global).
 - Tezkire extraction and target logging: Devletshah, Sām Mīrzā, ʿAlī Şīr Navāʾī, Sādīqī Bēg, ʿĀşıq Çelebi, Hidayat *Riyāḍ al-ʿĀrifīn*, plus the modern TEIS Yesevi authoritative entry.
-- Mecmûʿa context analysis: Nesîmî catalogue entries searched for misattributed or co-located Hakîkî *ghazals*. This method showed that Hakîkî's poems were often transmitted within Hurufi *mecmûʿa* anthologies, grounded empirically by Ankara Milli Kütüphane A 5252.
+- Mecmûʿa context analysis: Nesîmî catalogue entries searched for misattributed or co-located Hakîkî *ghazals*. This method showed that Hakîkî's poems were often transmitted within Hurufi *mecmûʿa* anthologies, a pattern grounded empirically by Ankara Milli Kütüphane A 5252 (currently the diagnostic's sole empirical anchor; broader confirmation awaits additional comparable witnesses).
 - Auction-house archives: Christie's, Sotheby's, Bonhams (zero direct Jahānshāh witnesses surfaced; the corpus is 100% institutional or private archive).
 - Scribe-name search: Qanbar-ʿAlī b. Khusraw al-Iṣfahānī (BL Or 9493 colophon).
 - Printed-catalogue text search: Rieu, Blochet, Pertsch, Karatay, Monzavī, Storey, Browne, Gibb (via Google Books / Internet Archive / HathiTrust).
 - Modern-edition source tracing: Hüseyinzade, Rahimov, Recebov, Demirci, Değirmençay, Macit, Alemdârî, Ownuk-Hangeldi (manuscript bases checked; several resolved, several inferred or unrecovered).
 - Field-research literature: Sohrabiabad and Akın 2019 (Alevi shrine corpus); Konyar 1936 (*Diyarbekir Yıllığı* III, ethnographic adjacency).
 
+Among the modern editions traced, the 1986 Yazıçı and 2006 Şərq-Qərb Baku editions, sometimes conflated in prior scholarship, are confirmed here as distinct: different publishers and different editorial teams (Hacı Mail replaces Əliyev in 2006). The 1988 Bakı Arabic-script edition by Rəhimov and Əliyev (for an Iranian-Azerbaijani readership) is also distinct from both Cyrillic editions.
+
 The Alevi shrine corpus motivated revisiting the search-key matrix in v1.0.1 to cover 9 additional script traditions (Russian Cyrillic, Azerbaijani Latin and Cyrillic, Georgian Mkhedruli, Uzbek Latin and Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) for institutional catalogues in the Russian Federation, Caucasus, Central Asia, and South Asia.
+
+Research-tool disclosure: the search workflow was executed with substantial assistance from large language model coding tools (Anthropic Claude Code, with cross-checks from Google Gemini), used to assist with portal probing, transliteration matrix construction, *mecmûʿa* adjacency analysis, and bibliographic source tracing. All findings and verdicts are sourceable to primary or secondary materials cited in the register entries and the per-session search records; the LLM tools accelerated the surface area covered but do not themselves constitute the evidence base.
 
 ## Search depth and breadth
 
@@ -135,6 +140,10 @@ A `CITATION.cff` file is included; GitHub renders a "Cite this repository" widge
 ## Status
 
 Research-grade corpus, not a critical edition. Several entries carry open-access requirements (ILL-procurement of base editions; field correspondence for Diyarbakır Ulutürk and Ilkhchi pirs' archive). Decoration data is captured only when accessible through open-access sources; the corpus is a poetry-witness census with decoration as a secondary attribute, not a corpus of decorated manuscripts.
+
+Known limitations: the Iranian portion of the corpus is under-investigated rather than exhausted, since the nine Iranian institutional portals were inaccessible from outside Iran during the search window and no on-site or in-person research was performed; a future revision with Iranian collaborator access could substantially change the witness count. The Ilkhchi Kırklar Ocağı pirs' archive holds a complete unphotographed divan codex of potentially high textual value, but access depends on shrine-community consent and has not been granted to scholars outside the local pir tradition; field collaboration with Sohrabiabad and Akın or with Iranian Azerbaijani Alevi-studies specialists is the documented path for extending that coverage.
+
+Planned v2.0 scope: a separate v2.0 effort will expand the deposit to include 21-23 Cihanşah chancery documents (firmans, *soyurghal* grants, an inscription, and a letter spanning 1434-1467) surfaced via asnad.org. These documentary witnesses fall outside the v1.0.x poetry scope but materially extend the picture of Cihanşah as a historical figure.
 
 ## Author Contributions
 
