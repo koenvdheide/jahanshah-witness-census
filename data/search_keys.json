@@ -173,8 +173,43 @@
       },
       {
         "editor": "Rahimov, Hüseyinzade & Aliyev",
-        "year": "1986/2006",
-        "place": "Baku: Yazıcı"
+        "year": 1986,
+        "place": "Bakı: Yazıçı",
+        "_anl_bib_id": "vtls000216060",
+        "note": "142 + 1 pp; 15 cm; Cyrillic; Klassik Azərbaycan ədəbiyyatı series. Per ek.anl.az 2026-05-11 round, this is the 1986 Bakı Yazıçı 'Seçilmiş əsərləri' edition; v1.0 deposit conflated it with the 2006 Şərq-Qərb edition (now split out below)."
+      },
+      {
+        "editor": "Rahimov, Hüseynzadə & Hacı Mail (red. M. Mailoğlu)",
+        "year": 2006,
+        "place": "Bakı: Şərq-Qərb",
+        "_anl_bib_id": "vtls000039901",
+        "note": "152 pp; 15 cm; Klassik Azərbaycan ədəbiyyatı series. Distinct from the 1986 Yazıçı edition (different publisher Şərq-Qərb, different editorial team Hacı Mail replacing Əliyev). v1.0.1 correction F-V1-CORRECTION-2 via ek.anl.az probe 2026-05-11."
+      },
+      {
+        "editor": "Rahimov & Aliyev",
+        "year": 1988,
+        "place": "Bakı: Yazıçı",
+        "_anl_bib_id": "vtls000293094",
+        "note": "Qəzəllər və rübailər; 109 + 1 pp; 14 cm; Arabic script (NOT Cyrillic). Editors Rəhimov + Əliyev without Hüseyinzade. Arabic-script transliteration target is likely Iranian-Azerbaijani diaspora audience. F-EDITION3 via ek.anl.az probe 2026-05-11."
+      },
+      {
+        "editor": "Yerevanlı (red.)",
+        "year": 1966,
+        "place": "Yerevan: Hayastan",
+        "_anl_bib_id": "vtls000233714",
+        "note": "Şeirlər; 103 + 4 pp; 17 cm; Cyrillic. v1.0 deposit attributes this 1966 Yerevan edition to Hüseyinzade as compiler/editor; ek.anl.az records 'Ə. Yerevanlı' as redaktor. Possible Soviet editorial-role distinction (Yerevanlı=redaktor / Hüseynzadə=tərtibçi). 8 copies held at ANL Baku; ILL pathway. F-V1-CORRECTION-1."
+      },
+      {
+        "editor": "Əliyev & Rəhimov",
+        "year": 1982,
+        "place": "Bakı (anthology II. buraxılış)",
+        "note": "'Cahanşah Həqiqi' chapter in 'Keçmişimizdən gələn səslər. II buraxılış'. S. 3-4-47. Pre-dates 1986 Bakı Yazıçı edition by 4 years; potentially the source for 1986 base text. F-EDITION2a via manuscript.az probe 2026-05-11."
+      },
+      {
+        "editor": "Bağırov, Əkrəm",
+        "year": 1987,
+        "place": "Bakı: Azərbaycan gəncləri (newspaper article)",
+        "note": "Newspaper article on Cahanşah Həqiqi dated 4 iyun 1987. F-EDITION2c via manuscript.az probe 2026-05-11. Brief popular-history piece; cited as evidence of Az popular reception, not as critical edition."
       },
       {
         "editor": "Recebov",
