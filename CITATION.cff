@@ -14,6 +14,9 @@ authors:
 date-released: "2026-05-11"
 version: "1.0.1"
 license: "CC-BY-4.0"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20113822"
 abstract: >
   A codicological inventory of manuscript witnesses to the Dīvān
   of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name Ḥaqīqī / Hakîkî),

@@ -9,6 +9,8 @@ Authors:
 
 License: [CC BY 4.0](LICENSE)
 
+DOI: <https://doi.org/10.5281/zenodo.20113822>
+
 ## Coverage
 
 14 audited entries of manuscripts containing poetry by Jahānshāh Qaraqoyunlu, plus 10 ancillary reference extracts. Verification breakdown: 9 verified Jahānshāh witnesses + 2 attribution-disputed candidates + 1 lost-attested + 2 rejected.
@@ -66,7 +68,7 @@ The Alevi shrine corpus (Diyarbakır Ulutürk *cönk* in the Anatolian *Ocak* tr
 
 If you use this dataset, please cite:
 
-> van der Heide, K. & Kazemipourleilabadi, N. (2026). *Jahanshah Qaraqoyunlu Manuscript Witness Census* (Version 1.0.1) [Data set]. Zenodo. *DOI to be added once the Zenodo release mints it.*
+> van der Heide, K. & Kazemipourleilabadi, N. (2026). *Jahanshah Qaraqoyunlu Manuscript Witness Census* (Version 1.0.1) [Data set]. Zenodo. <https://doi.org/10.5281/zenodo.20113822>
 
 A `CITATION.cff` file is included; GitHub renders a "Cite this repository" widget from it once indexed.
 
