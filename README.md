@@ -78,10 +78,8 @@ Witness census combining:
 - Auction-house archives: Christie's, Sotheby's, Bonhams (zero direct Jahānshāh witnesses surfaced; the corpus is 100% institutional or private archive).
 - Scribe-name search: Qanbar-ʿAlī b. Khusraw al-Iṣfahānī (BL Or 9493 colophon).
 - Printed-catalogue text search: Rieu, Blochet, Pertsch, Karatay, Monzavī, Storey, Browne, Gibb (via Google Books / Internet Archive / HathiTrust).
-- Modern-edition source tracing: Hüseyinzade, Rahimov, Recebov, Demirci, Değirmençay, Macit, Alemdârî, Ownuk-Hangeldi (manuscript bases checked; several resolved, several inferred or unrecovered).
+- Modern-edition source tracing: Hüseyinzade, Rahimov, Recebov, Demirci, Değirmençay, Macit, Alemdârî, Ownuk-Hangeldi (manuscript bases checked; several resolved, several inferred or unrecovered). Three Baku editions, sometimes conflated in prior scholarship, are confirmed here as distinct: 1986 Yazıçı, 2006 Şərq-Qərb (different publisher and editorial team), and 1988 Bakı Arabic-script (for an Iranian-Azerbaijani readership).
 - Field-research literature: Sohrabiabad and Akın 2019 (Alevi shrine corpus); Konyar 1936 (*Diyarbekir Yıllığı* III, ethnographic adjacency).
-
-Among the modern editions traced, the 1986 Yazıçı and 2006 Şərq-Qərb Baku editions, sometimes conflated in prior scholarship, are confirmed here as distinct: different publishers and different editorial teams (Hacı Mail replaces Əliyev in 2006). The 1988 Bakı Arabic-script edition by Rəhimov and Əliyev (for an Iranian-Azerbaijani readership) is also distinct from both Cyrillic editions.
 
 The Alevi shrine corpus motivated revisiting the search-key matrix in v1.0.1 to cover 9 additional script traditions (Russian Cyrillic, Azerbaijani Latin and Cyrillic, Georgian Mkhedruli, Uzbek Latin and Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) for institutional catalogues in the Russian Federation, Caucasus, Central Asia, and South Asia.
 
@@ -141,9 +139,13 @@ A `CITATION.cff` file is included; GitHub renders a "Cite this repository" widge
 
 Research-grade corpus, not a critical edition. Several entries carry open-access requirements (ILL-procurement of base editions; field correspondence for Diyarbakır Ulutürk and Ilkhchi pirs' archive). Decoration data is captured only when accessible through open-access sources; the corpus is a poetry-witness census with decoration as a secondary attribute, not a corpus of decorated manuscripts.
 
-Known limitations: the Iranian portion of the corpus is under-investigated rather than exhausted, since the nine Iranian institutional portals were inaccessible from outside Iran during the search window and no on-site or in-person research was performed; a future revision with Iranian collaborator access could substantially change the witness count. The Ilkhchi Kırklar Ocağı pirs' archive holds a complete unphotographed divan codex of potentially high textual value, but access depends on shrine-community consent and has not been granted to scholars outside the local pir tradition; field collaboration with Sohrabiabad and Akın or with Iranian Azerbaijani Alevi-studies specialists is the documented path for extending that coverage.
+### Known limitations
 
-Planned v2.0 scope: a separate v2.0 effort will expand the deposit to include 21-23 Cihanşah chancery documents (firmans, *soyurghal* grants, an inscription, and a letter spanning 1434-1467) surfaced via asnad.org. These documentary witnesses fall outside the v1.0.x poetry scope but materially extend the picture of Cihanşah as a historical figure.
+The Iranian portion of the corpus is under-investigated rather than exhausted, since the nine Iranian institutional portals were inaccessible from outside Iran during the search window and no on-site or in-person research was performed; a future revision with Iranian collaborator access could substantially change the witness count. The Ilkhchi Kırklar Ocağı pirs' archive holds a complete unphotographed divan codex of potentially high textual value, but access depends on shrine-community consent and has not been granted to scholars outside the local pir tradition; field collaboration with Sohrabiabad and Akın or with Iranian Azerbaijani Alevi-studies specialists is the documented path for extending that coverage.
+
+### Planned v2.0 scope
+
+A separate v2.0 effort will expand the deposit to include 21-23 Cihanşah chancery documents (firmans, *soyurghal* grants, an inscription, and a letter spanning 1434-1467) surfaced via asnad.org. These documentary witnesses fall outside the v1.0.x poetry scope but materially extend the picture of Cihanşah as a historical figure.
 
 ## Author Contributions
 
