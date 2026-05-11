@@ -1,6 +1,6 @@
 # Jahanshah Qaraqoyunlu Manuscript Witness Census
 
-A codicological inventory of manuscript witnesses to the *Dīvān* of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name *Ḥaqīqī* / *Hakîkî*), Qaraqoyunlu ruler-poet.
+A codicological inventory of manuscript witnesses to the *Dīvān* of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name *Ḥaqīqī* / *Hakîkî*), Qaraqoyunlu ruler-poet. Persian-Turkish bilingual ghazals, *masnavīs*, and tuyughs; transmission extends from 15th-century institutional witnesses through 19th-century Anatolian and Iranian Azerbaijani Alevi shrine copies. v1.0.1 holds 14 audited entries (9 verified, 2 attribution-disputed, 1 lost-attested, 2 rejected) plus 10 ancillary reference extracts.
 
 Authors:
 
@@ -8,61 +8,94 @@ Authors:
 - Negar Kazemipourleilabadi, Ludwig-Maximilians-Universität München, Department of Art History (ORCID [0009-0008-2289-7492](https://orcid.org/0009-0008-2289-7492))
 
 License: [CC BY 4.0](LICENSE)
-
 DOI: <https://doi.org/10.5281/zenodo.20113822>
 
-## Coverage
+## Witnesses at a glance
 
-14 audited entries of manuscripts containing poetry by Jahānshāh Qaraqoyunlu, plus 10 ancillary reference extracts. Verification breakdown: 9 verified Jahānshāh witnesses + 2 attribution-disputed candidates + 1 lost-attested + 2 rejected.
+| Shelfmark | Date (CE) | Holding | Folios | Status | Decoration data |
+|---|---|---|---|---|---|
+| BL Or 9493 | 1488 | British Library, London | 85 | verified | qualitative only (Minorsky 1954) |
+| Matenadaran MS 965 | 1474–75 | Matenadaran, Yerevan | 54 | verified | unrecovered |
+| Süleymaniye Fatih 3808 | 20th c. | Süleymaniye, Istanbul | 107 | verified | seal only (Mahmud I waqf) |
+| Ankara DTCF İsmail Saib I/2221 | 19th c. | Ankara DTCF or Atatürk Üniv. Erzurum (disputed) | 26 | verified (caveat) | unrecovered |
+| Tehran University Ktp. 8198 | 16th c. | Tehran University Central Library | 133 | verified | unrecovered |
+| Ankara MK A 5252 | 20th c. | Milli Kütüphane, Ankara | 204 (fragment ff. 183a–196a) | verified (fragment) | unrecovered |
+| Diyarbakır Ulutürk *cönk* | 1860s | İmam Zeynel Abidin Ocağı (Abbas Önen) | unknown | verified (fragment) | yes (negative: undecorated village rika notebook) |
+| Ilkhchi Kırklar Ocağı pirs' archive | unknown | Kırklar Ocağı, Ilkhchi (East Azerbaijan, Iran) | unknown | verified | unphotographed |
+| Ilkhchi *cem cönks* | unknown | Kırklar Ocağı performance archive | unknown | verified (fragment) | unrecovered |
+| Diyarbakır Yazma Eserler (former) | unknown | Diyarbakır Y.E. (reported lost per Cunbur 1999) | unknown | lost-attested-only | n/a |
+| Konya Hacı Bektaş BY0000010729 | unknown | Konya Hacı Bektaş Dergahı (via YEK) | 150 | candidate (probably non-Cihanşah) | unrecovered |
+| Nuruosmaniye 04281 | 1677/78 | Nuruosmaniye, Istanbul | 326 | candidate (probably Yusuf Hakîkî) | yes (paper, binding, seals captured) |
+| Baku-Doerfer hypothesis | n/a | (no codex; misidentified printed edition) | n/a | rejected (`non_manuscript_misidentification`) | n/a |
+| AMEA Manuscripts Institute (2021 acquisition) | post-2021 | AMEA, Baku | unknown | rejected (`derivative_surrogate` of Fatih 3808) | n/a |
 
-Source types in scope:
+Substantive decoration data is captured for 2 of 14 entries (Nuruosmaniye 04281 positive evidence; Diyarbakır Ulutürk *cönk* negative evidence). Süleymaniye Fatih 3808 records a Mahmud I waqf seal only. BL Or 9493 carries Minorsky 1954's qualitative description with no formal codicological structure. The remaining 10 entries have no decoration data recovered through open-access sources; direct examination, ILL of base-text editions, or field correspondence is the recovery path.
 
-- Witness, candidate, and audit entries (counted in the 14-entry register; 12 non-rejected): full divans, fragmentary copies, *mecmuʿa* / *jung* / *cönk* anthologies containing ≥1 Hakîkî *ghazal*, candidates with disputed attribution, and audit-preserved rejected leads.
-- Ancillary scholarly sources (consulted but not register entries): 5 *tezkire* entries (in [`data/tezkire_extracts/`](data/tezkire_extracts/)) plus 5 research-log extracts (in [`data/research_log/`](data/research_log/)), totalling 10 reference extracts on Hakîkî with verbatim sample verses where retrieved.
+## Featured witnesses
 
-For each witness, decoration / paper / illumination data is captured when accessible and recorded as descriptive per-witness data in the dossiers.
+BL Or 9493 (London). Posthumous Persian-Turkish copy dated Shawwāl 893 (September 1488), 85 folios, copied by Qanbar-ʿAlī b. Khusraw al-Iṣfahānī. Minorsky 1954 (the foundational scholarly description) reports "state of preservation perfect" and calls it a "handsome little manuscript", but supplies no formal paper, binding, or illumination description beyond the colophon transcription.
 
-| Category | Count | Witnesses |
-|:---------|:-----:|:----------|
-| TEIS Yesevi roster (verified) | 5 | BL Or 9493 · Matenadaran 965 · Süleymaniye Fatih 3808 · Ankara DTCF / Atatürk Üniv. İsmail Saib I/2221 · Tehran University 8198 |
-| Institutional fragment (verified) | 1 | Ankara MK A 5252 |
-| Alevi shrine, Ocak tradition (verified) | 3 | Diyarbakır Ulutürk *cönk* (Anatolian) · Ilkhchi Kırklar Ocağı pirs' archive (Iranian Azerbaijani) · Ilkhchi *cem cönks* (Iranian Azerbaijani) |
-| Disputed candidate | 2 | catalogue-ambiguous Hakîkî attributions; see [`data/witness_register.json`](data/witness_register.json) for entries |
-| Lost but attested | 1 | Diyarbakır Yazma Eserler Kütüphanesi (former, per Cunbur 1999) |
-| Rejected (audit) | 2 | "Baku-Doerfer" hypothesis (traced to Rahimov 1986 published edition); AMEA 2021 acquisition (surrogate of Süleymaniye Fatih 3808) |
+Matenadaran MS 965 (Yerevan). Earliest extant witness, 879 AH / 1474–75 CE, roughly thirteen years before BL Or 9493. 54 folios, Persian and Turkish. Reached Yerevan through the Arutyun Gazaryan bequest (NYC Armenian collector) before consolidation into the Matenadaran in 1959; this v1.0.1 finding (see [`data/searches/probe_2026-05-11_avenue_caucasus_maincontext.json`](data/searches/probe_2026-05-11_avenue_caucasus_maincontext.json)) rebuts an earlier Azerbaijani Wikipedia conflation with BL Or 9493's London itinerary. Decoration data unrecovered.
 
-> *Inclusion criterion for `rejected` entries*: only candidates cited in published scholarship or acquired as Cihānşāh witnesses by a major institution are audit-preserved in the register. Routine search false-positives (name-collision noise, namesake disambiguations, body-text catalogue matches) are recorded in the per-session JSONs under [`data/searches/`](data/searches/), not in the register itself. The two current rejected entries both address one underlying question (whether Baku holds an independent Cihānşāh codex) and answer it in the negative with independent evidence. Each rejected entry carries a `rejection_type` sub-classification (`derivative_surrogate` or `non_manuscript_misidentification`); see [`data/spec.md`](data/spec.md) for definitions.
+Nuruosmaniye 04281 (Istanbul). The corpus's only entry with substantive material description. 326-folio Persian Divan dated 1088 AH / 1677/78 CE, nestalik script. Paper: *aharlı*, thin, vertical chain-lines, cream-coloured. Binding: pasteboard with cherry-red leather (*vişne renk meşin kaplı*), miklebli envelope flap, gilt-tooled sunken shemse central medallion, salbek pendant lobes, zencerek chain-pattern border ruling: a classic 17th-century Ottoman shemse cilt. Seals: Osman III tughralı waqf seal on f. 1a; İbrahim Hanif seal alongside. Caveat: folio count (far larger than any of the five TEIS Yesevi Cihanşah witnesses) plus the cataloguer's reference to Muʿīn V.961-962 (multi-Hakîkî entries) plus the 200+ year gap from Cihanşah's death make this more likely a Yusuf Hakîkî divan than a Cihanşah witness. Codicologically rich, attributionally unresolved.
+
+Diyarbakır Ulutürk *cönk*. Documented in the field 2016 by Bülent Akın; published in Sohrabiabad and Akın 2019 *Alevilik-Bektaşilik Araştırmaları Dergisi* 19 with photographic plates. Held by Abbas Önen at the İmam Zeynel Abidin Ocağı in the Ulutürk village (Diyarbakır region). 1860s, rika script, Azerbaijani Turkish. Eight Hakîkî ghazals co-located with Nesîmî and Şah Hatâî: the Hurufi-Türkmen-Alevi poetic continuum attested in living shrine tradition. Decoration: undecorated village notebook (negative evidence, confidence high) per the photo plates in Sohrabiabad and Akın 2019 Ek-3. Not codicologically rich but ethnographically and textually significant: eight of these ghazals are not present in the institutional editions examined.
 
 ## Findings
 
-Two structural findings stand out:
+Two structural findings emerge from the audit:
 
-1. By reported contents, the witnesses fall into two groups: a fuller form with *masnavīs* (Group A) and a narrower form without (Group B). No direct stemmatic collation has been performed. Matenadaran 965, Tehran University 8198, and Süleymaniye Fatih 3808 are reported as Group A (Mat 965 and Süleymaniye Fatih 3808 contents counts remain unresolved at the codex level pending direct collation); BL Or 9493 is Group B. Jāmī's contemporary *Münşe'āt* (which describes Cihānşāh's lifetime divan as containing both *ghazals* and *masnavīs*) supports the *masnavī*-bearing form as conservative for that layer. Caveat: Mat 965 vs Süleymaniye Fatih 3808 contents identity is unresolved at the codex level (Anatolia DB listings suspected boilerplate).
-2. The Alevi shrine tradition extends the textual corpus. The Anatolian and Iranian Azerbaijani *Ocak* lineages have preserved eleven *ghazals* not present in the institutional editions examined (eight from the Diyarbakır Ulutürk *cönk*, three from the Ilkhchi *cem cönks*) plus a complete divan codex in the Ilkhchi Kırklar Ocağı pirs' archive that has not yet been examined by scholars outside the shrine community.
+1. Two textual groups by reported contents. Group A (fuller, with *masnavīs*): Matenadaran 965, Tehran University 8198, Süleymaniye Fatih 3808. Group B (without *masnavīs*): BL Or 9493. Jāmī's contemporary *Münşeʾāt* describes Cihānşāh's lifetime divan as containing both ghazals and *masnavīs*, making the *masnavī*-bearing form conservative for the lifetime layer. Caveats: no direct stemmatic collation has been performed; Mat 965 vs Süleymaniye Fatih 3808 contents-identity is unresolved (Anatolia DB listings suspected boilerplate).
+2. The Alevi shrine corpus extends the textual range. Anatolian and Iranian Azerbaijani *Ocak* lineages have preserved eleven ghazals not present in the institutional editions examined (eight from Diyarbakır Ulutürk, three from Ilkhchi *cem cönks*) plus a complete divan codex in the Ilkhchi Kırklar Ocağı pirs' archive that has not yet been examined by scholars outside the shrine community.
 
-## Repository contents
+## Decoration and material features
 
-- [`data/`](data/): deposit artifacts
-  - `witness_register.json`: 14-entry register with verification status per witness
-  - `search_keys.json`: 5-family search-key matrix (modern Latin / 19th-c. Orientalist / Soviet-Cyrillic / Arabic-script / catalogue-context) covering Persian, Turkish, Ottoman Turkish, and Azerbaijani Turkic forms, plus a `script_families` block of 9 additional script traditions (Russian Cyrillic modern, Az Latin/Cyrillic, Georgian Mkhedruli, Uzbek Latin/Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) added in v1.0.1
-  - `spec.md`: witness register JSON schema (v1) reference
-  - `searches/`: per-scope search session JSONs across 8 v1.0.0 scopes (UK/European, Turkey/Anatolia, Iran/Caucasus, mecmûʿa-Nesîmî adjacency, tezkire, auctions, catalogue/scribe/edition backchain, South Asian/global), plus v1.0.1 follow-on probe, crosscheck, and gap-disposition artifacts (27 files total at v1.0.1)
-  - `tezkire_extracts/`: verbatim *tezkire* entries on Hakîkî (5 entries: TEIS Yesevi, Macit/Bilig 2000, Yınanç MEB, Konukcu TDV, Câmî Münşeʾāt)
-  - `research_log/`: archived source extracts and methodological assessments (5 files: Macit 2000 full extract, Minorsky 1954 codicology recheck, Nuruosmaniye 04281 decoration extract, Sohrabiabad-Akın 2019 witness list, TEIS Yesevi bibliography 2026-05-02)
+The decoration data captured across the 14 entries breaks down as follows:
+
+- Rich positive evidence: 1 of 14. Nuruosmaniye 04281 (see Featured witnesses above): paper, binding, seals all recovered from the YEK detail page.
+- Negative evidence with confidence: 1 of 14. Diyarbakır Ulutürk *cönk*: an undecorated village rika notebook documented through Sohrabiabad and Akın 2019 photo plates.
+- Partial (seal only): 1 of 14. Süleymaniye Fatih 3808 carries a Mahmud I waqf seal on f. 1a per the Anatolia DB, but no paper, binding, or illumination data.
+- Qualitative description only: 1 of 14. BL Or 9493 carries Minorsky 1954's qualitative judgment ("state of preservation perfect", "handsome little manuscript") without formal structural data.
+- Unrecovered: 10 of 14. All other entries lack recoverable material data through open-access sources. Recovery paths include direct examination, ILL of Hüseyinzade 1966, Rahimov 1986, or Demirci 1997 base-text editions, and field correspondence (Ilkhchi pirs' archive).
+
+The corpus is not a corpus of decorated manuscripts: it is a poetry-witness census in which decoration is recorded when accessible. For material-culture research, Nuruosmaniye 04281 is the only positive-evidence entry, and its attribution to Cihanşah Hakîkî is contested.
+
+## Coverage and scope
+
+Source types in scope:
+
+- Witness, candidate, and audit entries (counted in the 14-entry register; 12 non-rejected): full divans, fragmentary copies, *mecmuʿa* / *jung* / *cönk* anthologies containing one or more Hakîkî ghazal, candidates with disputed attribution, and audit-preserved rejected leads.
+- Ancillary scholarly sources (consulted but not register entries): 5 *tezkire* entries in [`data/tezkire_extracts/`](data/tezkire_extracts/) plus 5 research-log extracts in [`data/research_log/`](data/research_log/), totalling 10 reference extracts on Hakîkî with verbatim sample verses where retrieved.
 
 ## Methodology
 
 Witness census combining:
 
-- Aggregator sweeps: Fihrist (UK), Qalamos (German-speaking world), Al-Furqan (Islamic-mss union gateway), YEK portal (Turkey), NLAI / Majlis / DENA-FANKHA (Iran), Matenadaran (Armenia), Islamisation of Anatolia DB, Salar Jung / Khuda Bakhsh / Rampur Raza (South Asia), HMML / WorldCat (global)
-- Tezkire extraction and target logging: Devletshah, Sām Mīrzā, ʿAlī Şīr Navāʾī, Sādīqī Bēg, ʿĀşıq Çelebi, Hidayat *Riyāḍ al-ʿĀrifīn*, plus the modern TEIS Yesevi authoritative entry
-- Mecmûʿa adjacency mining: Nesîmî catalogue entries searched for misattributed or co-located Hakîkî *ghazals*; a heuristic that empirically grounded the Hurufi-cluster transmission diagnostic via Ankara MK A 5252
-- Auction-house archives: Christie's, Sotheby's, Bonhams (zero direct Jahānshāh witnesses surfaced; the corpus is 100% institutional / private archive)
-- Scribe-name search: Qanbar-ʿAlī b. Khusraw al-Iṣfahānī (BL Or 9493 colophon)
-- Printed-catalogue OCR backchain: Rieu, Blochet, Pertsch, Karatay, Monzavī, Storey, Browne, Gibb (via Google Books / Internet Archive / HathiTrust)
-- Modern editor backchain: Hüseyinzade, Rahimov, Recebov, Demirci, Değirmençay, Macit, Alemdârî, Ownuk-Hangeldi (manuscript bases checked; several resolved, several inferred or unrecovered)
+- Aggregator sweeps: Fihrist (UK), Qalamos (German-speaking world), Al-Furqan (Islamic-mss union gateway), YEK portal (Turkey), NLAI / Majlis / DENA-FANKHA (Iran), Matenadaran (Armenia), Islamisation of Anatolia DB, Salar Jung / Khuda Bakhsh / Rampur Raza (South Asia), HMML / WorldCat (global).
+- Tezkire extraction and target logging: Devletshah, Sām Mīrzā, ʿAlī Şīr Navāʾī, Sādīqī Bēg, ʿĀşıq Çelebi, Hidayat *Riyāḍ al-ʿĀrifīn*, plus the modern TEIS Yesevi authoritative entry.
+- Mecmûʿa adjacency mining: Nesîmî catalogue entries searched for misattributed or co-located Hakîkî ghazals; a heuristic that empirically grounded the Hurufi-cluster transmission diagnostic via Ankara MK A 5252.
+- Auction-house archives: Christie's, Sotheby's, Bonhams (zero direct Jahānshāh witnesses surfaced; the corpus is 100% institutional or private archive).
+- Scribe-name search: Qanbar-ʿAlī b. Khusraw al-Iṣfahānī (BL Or 9493 colophon).
+- Printed-catalogue OCR backchain: Rieu, Blochet, Pertsch, Karatay, Monzavī, Storey, Browne, Gibb (via Google Books / Internet Archive / HathiTrust).
+- Modern editor backchain: Hüseyinzade, Rahimov, Recebov, Demirci, Değirmençay, Macit, Alemdârî, Ownuk-Hangeldi (manuscript bases checked; several resolved, several inferred or unrecovered).
+- Field-research literature: Sohrabiabad and Akın 2019 (Alevi shrine corpus); Konyar 1936 (*Diyarbekir Yıllığı* III, ethnographic adjacency).
 
-The Alevi shrine corpus (Diyarbakır Ulutürk *cönk* in the Anatolian *Ocak* tradition; Ilkhchi pirs' archive and Ilkhchi *cem cönks* in the Iranian Azerbaijani *Ocak* tradition) preserves eleven *ghazals* not present in the institutional editions examined, plus a complete divan codex in the Ilkhchi Kırklar Ocağı pirs' archive that has not yet been examined by scholars outside the shrine community.
+The Alevi shrine corpus motivated revisiting the search-key matrix in v1.0.1 with a `script_families` block covering 9 additional script traditions (Russian Cyrillic, Az Latin and Cyrillic, Georgian Mkhedruli, Uzbek Latin and Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq) for institutional catalogues in the Russian Federation, Caucasus, Central Asia, and South Asia.
+
+## Verification status and audit trail
+
+Each register entry carries a `verification_status` from a six-value enum (defined in [`data/spec.md`](data/spec.md)): `verified`, `verified_with_attribution_caveat`, `candidate_probably_non_cihansah`, `candidate_probably_yusuf_hakiki_or_other_homonym`, `lost_witness_attested_only`, `rejected`. Per-status counts live in [`data/witness_register.json`](data/witness_register.json) `stats.by_verification`.
+
+> *Inclusion criteria for `rejected` and `candidate_probably_*` entries.* The two rejected entries are audit-preserved rebuttals to specific claims appearing in published scholarship (the Rahimov 1986 Baku edition: a printed edition once treated as a manuscript witness) or in an institutional acquisition announcement (the 2021 AMEA acquisition: a Süleymaniye Fatih 3808 surrogate). Each rejected entry additionally carries a `rejection_type` sub-classification (`derivative_surrogate` or `non_manuscript_misidentification`); see [`data/spec.md`](data/spec.md) for definitions. The two attribution-disputed candidate entries are catalogue-ambiguous Hakîkî attributions where disambiguation work assigned a non-Cihanşah verdict (Konya BY0000010729 via mecmûʿa-adjacency layout analysis; Nuruosmaniye 04281 via Muʿīn V.961-962 multi-Hakîkî reference plus Ottoman-date prior plus folio-count anomaly). Routine search false-positives (name-collision noise, namesake disambiguations, body-text catalogue matches) are recorded in per-session JSONs under [`data/searches/`](data/searches/), not promoted to the register.
+
+## Repository contents
+
+- [`data/witness_register.json`](data/witness_register.json): the canonical 14-entry register.
+- [`data/spec.md`](data/spec.md): JSON schema reference for the register.
+- [`data/search_keys.json`](data/search_keys.json): search-key matrix (5 base script families plus 9 `script_families` extensions added in v1.0.1).
+- [`data/searches/`](data/searches/): 27 per-scope and follow-up search session JSONs (8 v1.0.0 scope searches plus 19 v1.0.1 follow-on probes, crosschecks, and gap-disposition artifacts).
+- [`data/tezkire_extracts/`](data/tezkire_extracts/): 5 verbatim *tezkire* entries on Hakîkî (TEIS Yesevi, Macit / Bilig 2000, Yınanç MEB, Konukcu TDV, Câmî *Münşeʾāt*).
+- [`data/research_log/`](data/research_log/): 5 source extracts and methodological assessments (Macit 2000 full extract, Minorsky 1954 codicology recheck, Nuruosmaniye 04281 decoration extract, Sohrabiabad-Akın 2019 witness list, TEIS Yesevi bibliography).
 
 ## Citation
 
@@ -74,11 +107,11 @@ A `CITATION.cff` file is included; GitHub renders a "Cite this repository" widge
 
 ## Status
 
-Research-grade corpus, not a critical edition. Several entries carry open access requirements (ILL-procurement of base editions; field correspondence for Diyarbakır Ulutürk and Ilkhchi pirs' archive).
+Research-grade corpus, not a critical edition. Several entries carry open-access requirements (ILL-procurement of base editions; field correspondence for Diyarbakır Ulutürk and Ilkhchi pirs' archive). Decoration data is captured only when accessible through open-access sources; the corpus is a poetry-witness census with decoration as a secondary attribute, not a corpus of decorated manuscripts.
 
 ## Author Contributions
 
 Following the [CRediT (Contributor Roles Taxonomy)](https://credit.niso.org/):
 
-- Negar Kazemipourleilabadi: Conceptualization (research-question origination); Investigation (background information on Persian / Turkish / Ottoman-Turkish / Azerbaijani sources); Writing, Review & Editing (native-speaker proofreading of multilingual orthography across Persian, Turkish, Ottoman Turkish, and Azerbaijani).
+- Negar Kazemipourleilabadi: Conceptualization (research-question origination); Investigation (background information on Persian, Turkish, Ottoman-Turkish, and Azerbaijani sources); Writing, Review & Editing (native-speaker proofreading of multilingual orthography across Persian, Turkish, Ottoman Turkish, and Azerbaijani).
 - Koen van der Heide: Conceptualization (joint); Methodology; Data Curation; Investigation (corpus building, search orchestration, source verification); Software (analysis pipeline); Writing, Original Draft; Visualization.
