@@ -34,15 +34,7 @@ A codicological inventory of manuscript witnesses to the *Dīvān* of **Jahansha
 
 ## Methodology
 
-Witness census combining:
-
-- **Aggregator sweeps**: Fihrist (UK), Qalamos (German-speaking world), Al-Furqan (Islamic-mss union gateway), YEK portal (Turkey), NLAI / Majlis / DENA-FANKHA (Iran), Matenadaran (Armenia), Islamisation of Anatolia DB, Salar Jung / Khuda Bakhsh / Rampur Raza (South Asia), HMML / WorldCat (global)
-- **Tezkire extraction and target logging**: Devletshah, Sām Mīrzā, ʿAlī Şīr Navāʾī, Sādīqī Bēg, ʿĀşıq Çelebi, Hidayat *Riyāḍ al-ʿĀrifīn*, plus the modern TEIS Yesevi authoritative entry
-- **Mecmûʿa adjacency mining**: Nesîmî catalogue entries searched for misattributed or co-located Hakîkî *ghazals*; a heuristic that empirically grounded the Hurufi-cluster transmission diagnostic via Ankara MK A 5252
-- **Auction-house archives**: Christie's, Sotheby's, Bonhams (zero direct Jahānshāh witnesses surfaced; the corpus is 100% institutional / private archive)
-- **Scribe-name search**: Qanbar-ʿAlī b. Khusraw al-Iṣfahānī (BL Or 9493 colophon)
-- **Printed-catalogue OCR backchain**: Rieu, Blochet, Pertsch, Karatay, Monzavī, Storey, Browne, Gibb (via Google Books / Internet Archive / HathiTrust)
-- **Modern editor backchain**: Hüseyinzade, Rahimov, Recebov, Demirci, Değirmençay, Macit, Alemdârî, Ownuk-Hangeldi (manuscript bases checked; several resolved, several inferred or unrecovered)
+The census combines aggregator sweeps, *tezkire* extraction, *mecmûʿa* adjacency mining, auction-house archives, scribe-name search, printed-catalogue OCR backchain, and modern-editor backchain. See [`data/README.md`](data/README.md) for the full methodology details.
 
 The Alevi shrine corpus (Diyarbakır Ulutürk *cönk* in the Anatolian *Ocak* tradition; Ilkhchi pirs' archive and Ilkhchi *cem cönks* in the Iranian Azerbaijani *Ocak* tradition) preserves eleven *ghazals* not present in the institutional editions examined, plus a complete divan codex in the Ilkhchi Kırklar Ocağı pirs' archive that has not yet been examined by scholars outside the shrine community.
 
