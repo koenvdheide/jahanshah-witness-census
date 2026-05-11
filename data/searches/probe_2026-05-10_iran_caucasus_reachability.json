@@ -42,7 +42,7 @@
         {"method": "webfetch", "url": "https://utdlib.ut.ac.ir", "outcome": "ECONNREFUSED"},
         {"method": "playwright_uzbekistan_vpn", "url": "https://library.ut.ac.ir", "outcome": "reachable; redirect executed; final URL https://library.ut.ac.ir/fa; page title 'کتابخانه مرکزی' (Central Library); navigation, news section, contentinfo with University of Tehran branding all rendered"},
         {"method": "playwright_uzbekistan_vpn", "url": "https://utdlib.ut.ac.ir", "outcome": "net::ERR_TIMED_OUT after 60s"},
-        {"method": "playwright_no_vpn", "url": "https://library.ut.ac.ir", "outcome": "reachable; redirect executed; same final URL https://library.ut.ac.ir/fa and same rendered content as VPN route — confirms the portal does NOT enforce geo-IP gating on the main landing"}
+        {"method": "playwright_no_vpn", "url": "https://library.ut.ac.ir", "outcome": "reachable; redirect executed; same final URL https://library.ut.ac.ir/fa and same rendered content as VPN route; confirms the portal does NOT enforce geo-IP gating on the main landing"}
       ],
       "new_status": "reachable_landing_only",
       "ready_for_search_execution": true,
@@ -62,7 +62,7 @@
       ],
       "new_status": "now_403",
       "ready_for_search_execution": false,
-      "notes": "Block mode shifted from ECONNREFUSED (server unreachable) to 403 (server reachable but actively rejecting). Server is alive and serving error pages — this is a behaviour change worth noting. The 'temporarily out of service' framing from 2023 no longer applies; the 403 is consistent across VPN routes, suggesting an explicit access-control rule rather than a network outage."
+      "notes": "Block mode shifted from ECONNREFUSED (server unreachable) to 403 (server reachable but actively rejecting). Server is alive and serving error pages; this is a behaviour change worth noting. The 'temporarily out of service' framing from 2023 no longer applies; the 403 is consistent across VPN routes, suggesting an explicit access-control rule rather than a network outage."
     },
     {
       "portal": "Astan-e Quds Razavi Library (Mashhad)",
@@ -75,7 +75,7 @@
         {"method": "webfetch", "url": "https://aqlibrary.org", "outcome": "loading-screen placeholder + domain-sale notice; ~80-100 chars of substantive text; not the library portal"},
         {"method": "webfetch", "url": "http://digital.aqlibrary.ir/index.aspx?pid=16&CollectionID=61", "outcome": "ECONNREFUSED"},
         {"method": "playwright_uzbekistan_vpn", "url": "https://aqlibrary.org", "outcome": "redirected to https://*.yoyanetaq.sbs/.../index.php?... 'Security Check' page; aqlibrary.org domain is parked / hijacked / redirected to clickbait infrastructure"},
-        {"method": "playwright_uzbekistan_vpn", "url": "http://digital.aqlibrary.ir/index.aspx?pid=16&CollectionID=61", "outcome": "net::ERR_NAME_NOT_RESOLVED — DNS does not resolve digital.aqlibrary.ir at all"}
+        {"method": "playwright_uzbekistan_vpn", "url": "http://digital.aqlibrary.ir/index.aspx?pid=16&CollectionID=61", "outcome": "net::ERR_NAME_NOT_RESOLVED; DNS does not resolve digital.aqlibrary.ir at all"}
       ],
       "new_status": "now_dead_domain_hijacked",
       "ready_for_search_execution": false,
@@ -92,7 +92,7 @@
       ],
       "new_status": "reachable_search_form_present",
       "ready_for_search_execution": true,
-      "notes": "MAJOR CHANGE: Marashi-Najafi (one of Iran's largest Persian-MS collections, Qom) is fully reachable on the first WebFetch attempt with no VPN. The 2026-05-02 403 Forbidden has been lifted. The search interface explicitly offers a manuscripts category. This is the highest-value newly-reachable portal in the retry — direct candidate for a follow-on Cihanşah/Hakîkî search-execution session."
+      "notes": "MAJOR CHANGE: Marashi-Najafi (one of Iran's largest Persian-MS collections, Qom) is fully reachable on the first WebFetch attempt with no VPN. The 2026-05-02 403 Forbidden has been lifted. The search interface explicitly offers a manuscripts category. This is the highest-value newly-reachable portal in the retry; direct candidate for a follow-on Cihanşah/Hakîkî search-execution session."
     },
     {
       "portal": "Bonyad-i Muhaqqiq Tabataba'i (Marashi catalogue index)",
@@ -137,7 +137,7 @@
       ],
       "new_status": "reachable_via_jina_only",
       "ready_for_search_execution": true,
-      "notes": "Direct browser access (with or without VPN) is blocked, but the r.jina.ai third-party mirror successfully returns full content. Search execution via jina mirror is feasible for static catalogue browsing but interactive search forms may not work through the mirror — consider this caveat when planning a follow-on search session. Note this collection is Shi'i jurisprudence / hadith focused; relevance to Cihanşah Hakîkî is low (Hurufi-leaning Turkmen poetry sits outside this collection's scope), so probe execution priority is low."
+      "notes": "Direct browser access (with or without VPN) is blocked, but the r.jina.ai third-party mirror successfully returns full content. Search execution via jina mirror is feasible for static catalogue browsing but interactive search forms may not work through the mirror; consider this caveat when planning a follow-on search session. Note this collection is Shi'i jurisprudence / hadith focused; relevance to Cihanşah Hakîkî is low (Hurufi-leaning Turkmen poetry sits outside this collection's scope), so probe execution priority is low."
     },
     {
       "portal": "ketab.ir",
@@ -146,9 +146,9 @@
         "https://ketab.ir"
       ],
       "probe_attempts": [
-        {"method": "webfetch", "url": "https://ketab.ir", "outcome": "Too many redirects (exceeded 10) — redirect-loop server config"},
+        {"method": "webfetch", "url": "https://ketab.ir", "outcome": "Too many redirects (exceeded 10); redirect-loop server config"},
         {"method": "jina", "url": "https://r.jina.ai/https://ketab.ir", "status": 200, "outcome": "page title 'Error 504 | Gateway Timeout'; mirror successfully fetched but the underlying ketab.ir server is returning 504"},
-        {"method": "playwright_uzbekistan_vpn", "url": "https://ketab.ir", "status": 504, "outcome": "page title 'Error 504 | Gateway Timeout'; same 504 via VPN route — server-side issue independent of client IP"}
+        {"method": "playwright_uzbekistan_vpn", "url": "https://ketab.ir", "status": 504, "outcome": "page title 'Error 504 | Gateway Timeout'; same 504 via VPN route; server-side issue independent of client IP"}
       ],
       "new_status": "now_server_down_504",
       "ready_for_search_execution": false,
@@ -159,7 +159,7 @@
     "total_portals_probed": 9,
     "newly_reachable": 2,
     "newly_reachable_portals": [
-      "Marashi-Najafi Library (marashilibrary.com): full search interface present, no blocking — direct WebFetch success",
+      "Marashi-Najafi Library (marashilibrary.com): full search interface present, no blocking; direct WebFetch success",
       "Tehran University Central Library (library.ut.ac.ir): landing page renders via Playwright with Uzbekistan VPN; deeper catalogue navigation pending"
     ],
     "reachable_via_jina_only": 1,
@@ -168,14 +168,14 @@
     ],
     "still_blocked": 3,
     "still_blocked_portals": [
-      "NLAI (opac.nlai.ir, nlai.ir): geo-IP strict — Uzbekistan VPN does not unlock",
+      "NLAI (opac.nlai.ir, nlai.ir): geo-IP strict; Uzbekistan VPN does not unlock",
       "Bonyad-i Muhaqqiq Tabataba'i (mtif.org): timeout across all tiers",
       "Malek National Library (malekmuseum.org): timeout across all tiers"
     ],
     "_note_tehran_u_digital_subdomain": "Tehran University's utdlib.ut.ac.ir digital subdomain timed out separately from the main library.ut.ac.ir landing; the latter is reachable so the portal as a whole is counted in newly_reachable, with the digital subdomain noted as a sub-block in the Tehran U probe entry.",
     "now_dead_or_changed": 3,
     "now_dead_or_changed_portals": [
-      "Astan-e Quds Razavi (aqlibrary.org): domain hijacked / parked / redirects to yoyanetaq.sbs Security Check; digital.aqlibrary.ir DNS does not resolve — library has likely migrated to a new domain (URL rediscovery needed)",
+      "Astan-e Quds Razavi (aqlibrary.org): domain hijacked / parked / redirects to yoyanetaq.sbs Security Check; digital.aqlibrary.ir DNS does not resolve; library has likely migrated to a new domain (URL rediscovery needed)",
       "Majlis (ical.ir): block mode shifted from ECONNREFUSED to 403 Forbidden",
       "ketab.ir: block mode shifted from 403 to 504 Gateway Timeout (server-side outage)"
     ],
