@@ -203,6 +203,12 @@
         "note": "Persian poems edition only"
       },
       {
+        "editor": "Değirmençay",
+        "year": 2021,
+        "place": "Atatürk Üniv., Erzurum",
+        "note": "Persian poems edition; second/updated edition by the same editor. Surfaced 2026-05-11 via ISAM Yordam direct GET-form exercise (chunk C2 finding F-EDITION1); not in v1.0 deposit. Add to backchain matrix for v2.0 textual-criticism collation work."
+      },
+      {
         "editor": "Macit",
         "year": 2002,
         "place": "Grafiker, Ankara",
