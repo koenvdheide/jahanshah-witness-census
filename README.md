@@ -19,7 +19,7 @@ A codicological inventory of manuscript witnesses to the *Dīvān* of **Jahansha
 - **1 lost-attested-only** (Diyarbakır YE per Cunbur 1999).
 - **2 rejected** (the "Baku-Doerfer" hypothesis traced to Rahimov 1986 published edition; the AMEA 2021 acquisition shown to be a surrogate of Süleymaniye Fatih 3808).
 
-> _Inclusion criterion for `rejected` entries_: only candidates cited in published scholarship or acquired as Cihānşāh witnesses by a major institution are audit-preserved in the register. Routine search false-positives (name-collision noise, namesake disambiguations, body-text catalogue matches) are recorded in the per-session JSONs under [`data/searches/`](data/searches/), not in the register itself. The two current rejected entries both address one underlying question (whether Baku holds an independent Cihānşāh codex) and answer it in the negative with independent evidence.
+> *Inclusion criterion for `rejected` entries*: only candidates cited in published scholarship or acquired as Cihānşāh witnesses by a major institution are audit-preserved in the register. Routine search false-positives (name-collision noise, namesake disambiguations, body-text catalogue matches) are recorded in the per-session JSONs under [`data/searches/`](data/searches/), not in the register itself. The two current rejected entries both address one underlying question (whether Baku holds an independent Cihānşāh codex) and answer it in the negative with independent evidence. Each rejected entry carries a `rejection_type` sub-classification (`derivative_surrogate` or `non_manuscript_misidentification`); see [`data/spec.md`](data/spec.md) for definitions.
 
 ## Repository contents
 

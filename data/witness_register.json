@@ -2,7 +2,7 @@
   "schema_version": 1,
   "generated": "2026-05-02",
   "purpose": "Authoritative witness register for the Ḥaqīqī / Hakîkî (Jahānshāh Qaraqoyunlu) manuscript census. Research-only; not corpus-integrated. See README.md for scope and methodology.",
-  "rejection_inclusion_criterion": "The two `rejected` entries below are audit-preserved rebuttals to specific claims that have appeared in published scholarship or in a major institutional acquisition announcement. Routine search false-positives (e.g., name-collision noise, namesake disambiguations, body-text matches in WordPress catalogues) are documented in the per-session JSONs under `data/searches/` and are not promoted to the register. Both rejected entries here address one underlying question, namely whether Baku holds an independent Cihānşāh codex; both answer that question in the negative with two independent strands of evidence.",
+  "rejection_inclusion_criterion": "The two `rejected` entries below are audit-preserved rebuttals to specific claims that have appeared in published scholarship or in a major institutional acquisition announcement. Routine search false-positives (e.g., name-collision noise, namesake disambiguations, body-text matches in WordPress catalogues) are documented in the per-session JSONs under `data/searches/` and are not promoted to the register. Both rejected entries here address one underlying question, namely whether Baku holds an independent Cihānşāh codex; both answer that question in the negative with two independent strands of evidence. Each rejected entry carries a `rejection_type` sub-classification: `derivative_surrogate` (the entry is a copy/microfilm/photocopy of an existing witness and would double-count it if included) or `non_manuscript_misidentification` (the entry was never an independent manuscript, e.g. a printed edition once mistakenly absorbed as a witness).",
   "witnesses": [
     {
       "witness_id": "bl_or_9493",
@@ -210,6 +210,7 @@
       "scholarly_attestation": [],
       "discovery_source": "(rejected) Initially absorbed into baseline from a misread of an edition list; TEIS Yesevi consultation 2026-05-02 confirmed no Baku manuscript witness exists in the TEIS Yesevi census.",
       "verification_status": "rejected",
+      "rejection_type": "non_manuscript_misidentification",
       "rejection_reason": "TEIS Yesevi 'HAKÎKÎ, Cihânşâh' (https://teis.yesevi.edu.tr/madde-detay/hakiki-cihansah): the authoritative Turkish biographical encyclopaedia entry: lists exactly FIVE TEIS Yesevi witnesses (BL Or 9493 / Mat 965 / Süleymaniye Fatih 3808 / Ankara DTCF İsmail Saib I/2221 / Tehran 8198). NO Baku codex appears in the witness list. The 'Baku' reference traces to Rahimov, Hüseyinzade & Aliyev's 1986/2006 BAKU EDITION (Yazıcı press), which is a published edition prepared from copies of MSS held elsewhere: not a separate codex. this risk had been flagged explicitly in advance ('Baku may be a publication witness'), and the consultation confirms the publication-only interpretation.",
       "notes": "Audit-trail entry. Retained at verification_status=rejected so future researchers/reviewers see this attribution was considered and ruled out. Do not promote to active witness without new primary-source evidence."
     },
@@ -636,6 +637,7 @@
       "scholarly_attestation": [],
       "discovery_source": "Iran sweep 2026-05-02; mecmûʿa sweep verbatim AMEA announcement re-read",
       "verification_status": "rejected",
+      "rejection_type": "derivative_surrogate",
       "rejection_reason": "AMEA's own announcement uses verbatim 'əlyazma surəti' (manuscript reproduction): i.e., a SURROGATE/COPY of a manuscript, not an independent codex. Acquired from Süleymaniye Library, Istanbul. Süleymaniye's unique Cihanşah witness is Fatih 3808; therefore the AMEA holding is a Fatih 3808 surrogate. Confirmed as a microfilm/photographic copy via mecmûʿa sweep verbatim re-reading of AMEA Manuscripts Institute page (https://www.manuscript.az/index.php?17%2F385459.html).",
       "notes": "Audit-trail entry. Baku question now closed: there is no independent Baku Cihanşah witness; Rahimov 1986 edition was prepared from copies of Süleymaniye Fatih 3808 (likely the same surrogate AMEA acquired). Both Baku entries (baku_doerfer_unspecified and amea_baku_2021_acquisition) are rejected on the same evidence."
     },

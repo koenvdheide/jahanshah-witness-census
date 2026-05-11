@@ -97,6 +97,7 @@ Beyond the core schema, individual entries carry codex-specific evidence fields.
 - `columns` (3/14): page columnation, when relevant.
 - `script` (3/14): script style (e.g. *nastaʿlīq*, *nasta'liq*, *taʿlīq*).
 - `rejection_reason` (2/14): explicit reasoning for `rejected` entries (audit-preserved).
+- `rejection_type` (2/14): sub-classification of rejected entries. Values: `derivative_surrogate` (the entry is a copy/microfilm of an existing witness and would double-count it if included) and `non_manuscript_misidentification` (the entry was never an independent manuscript, e.g. a printed edition once treated as if it were an MS witness).
 
 Single-occurrence extension fields document evidence specific to one witness (e.g. `alemdari_findings`, `disambiguation_caveat`, `recovery_method`, `decoration_data_value_for_or_9493_question`). These are not part of the v1 schema; they are research notes that future versions may either lift to first-class fields or move into `notes`.
 
@@ -111,7 +112,7 @@ The terminal-state enum has six values:
 | `candidate_probably_non_cihansah` | 1 | Manuscript confirmed to exist; attribution to Cihānşāh weakly supported. |
 | `candidate_probably_yusuf_hakiki_or_other_homonym` | 1 | Manuscript confirmed to exist; attribution probably points to a homonym (Yusuf Hakîkî or another *Hakîkî* poet). |
 | `lost_witness_attested_only` | 1 | Witness attested in scholarly literature but no longer extant or no longer locatable. |
-| `rejected` | 2 | Investigated and dismissed; audit-preserved with explicit `rejection_reason`. **Inclusion criterion**: only candidates cited in published scholarship or acquired as Cihānşāh witnesses by a major institution appear here. Routine search false-positives live in per-session JSONs under `data/searches/`. |
+| `rejected` | 2 | Investigated and dismissed; audit-preserved with explicit `rejection_reason` plus a `rejection_type` sub-classification (`derivative_surrogate` or `non_manuscript_misidentification`; see extension fields above). **Inclusion criterion**: only candidates cited in published scholarship or acquired as Cihānşāh witnesses by a major institution appear here. Routine search false-positives live in per-session JSONs under `data/searches/`. |
 
 `pending` is a transient state allowed during execution. At the v1.0.0 publication state, no entry carries `pending`.
 
