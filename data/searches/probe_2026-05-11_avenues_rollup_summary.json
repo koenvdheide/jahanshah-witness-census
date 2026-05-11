@@ -85,8 +85,9 @@
       "data/witness_register.json (matenadaran_965 augmentation only)"
     ],
     "release_blocker_residual_gaps": [
-      "yazmalar.gov.tr Playwright cert-ignore pass + direct search-form exercise (declared explicitly as residual gap; not a release blocker for v1.0.1 batch)"
+      "(yazmalar.gov.tr residual gap FALSIFIED post-rollup-write by 2026-05-11 Ottoman chunk C1; portal is DEFINITIVELY DEAD, not cert-walled; nginx 404 across all paths after TLS bypass; ZERO Wayback snapshots; operational catalogue is portal.yek.gov.tr already covered by v1.0 yek-search agent. See data/searches/probe_2026-05-11_ottoman_chunks_synthesis.json residual_gaps_revised block for current authoritative gap list.)"
     ],
+    "ottoman_chunks_deep_probe_addendum": "After this rollup was written, the Ottoman avenue was DEEPENED via 4 chunked parallel subagents (data/searches/probe_2026-05-11_ottoman_chunk{1,2,3,4}_*.json + data/searches/probe_2026-05-11_ottoman_chunks_synthesis.json). Cumulative additions: 6 Yusuf Hakîkî MSS audit (Konya cluster + Süleymaniye Hacı Mahmud Efendi sub-collection); 2 new FP classes (Cihan Şah honorific-dedicatory-frame; Anatolian aşık-tradition Hakîkî re-classification); ISAM T811.225/T811.215 call-number disambiguation system; Google-false-negative-class-on-Yordam methodological finding; Değirmençay 2021 v2.0 edition; Diyanet Hurufi text id 931 v2.0 mecmûʿa-mining lead. Net Ottoman avenue Cihanşah witnesses: 0; v1.0 14-entry register impact: 0.",
     "user_action_pending": "User performs final git push + Zenodo publish per CLAUDE.md Public-Facing Publishing rule. Per user prior direction: 'After avenue probes (batch into one release)' = batch all 2026-05-11 work as v1.0.1."
   }
 }
