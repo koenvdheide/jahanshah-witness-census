@@ -902,7 +902,7 @@
       "ready_for_content_search": false,
       "pir_budaq_era": false,
       "hakiki_witness_candidate": false,
-      "notes": "Teece Appendix B entry #26 lists Fatih 4054 with date TBD. YEK detail-page colophon resolves to 898 AH / 1492-93 CE, 26 years after Pir Budaq's death in 871/1466. So Teece's Pir-Budaq-era attribution applies to TIEM 02030 (the B4 precision hit, dated 863/1459), not to Fatih 4054. Both manuscripts exist as independent witnesses of the same Imad-i Faqih text tradition but in different patronage contexts. See notes/teece_2016_appendix_b_disambiguation.md for the full disambiguation narrative."
+      "notes": "Follow-up verification of Teece Appendix B entry #26. Süleymaniye Fatih 04054 colophon resolves to 898 AH / 1492-93 CE (post-Pir-Budaq by 26 years); Teece's Pir-Budaq attribution applies to the parallel TIEM 02030 (B4, 863/1459) instead. See notes/teece_2016_appendix_b_disambiguation.md for the full disambiguation narrative."
     }
   ],
   "summary": {
@@ -921,7 +921,7 @@
       "Digital Bodleian default HTML is an application shell; application/ld+json Accept header is needed for direct JSON search results.",
       "YEK AllFields tokenizes multi-word shelfmark strings and produced very large noisy counts; precision searches used yer_numarasi plus collection/title/author anchors.",
       "YEK detail extraction did not expose structured scribe/calligrapher fields for B2/B3, even where Teece supplies copyist attributions.",
-      "B4 live precision hit (TIEM 02030) and B5 follow-up verification (Süleymaniye Fatih 04054) confirm two independent manuscripts of the Imad-i Faqih Kulliyat text tradition: TIEM 02030 dated 04 Zilhicce 863 AH / 1459 CE (Pir-Budaq-era) and Fatih 04054 dated 898 AH / 1492-93 CE (post-Pir-Budaq). Teece Appendix B entry #26 date_TBD placeholder resolves to the later copy via YEK colophon."
+      "Two distinct Imad-i Faqih Kulliyats exist on YEK: TIEM 02030 (863/1459 CE) is the Pir-Budaq-era manuscript; Süleymaniye Fatih 04054 (898/1492-93 CE) is a later independent copy. See notes/teece_2016_appendix_b_disambiguation.md."
     ]
   }
 }

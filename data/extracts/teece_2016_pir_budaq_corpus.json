@@ -1025,8 +1025,8 @@
         "relevance": "Later Aq Quyunlu oblong anthology for Yusuf mentioned in front matter; useful for broad 15th-century ghazal anthology census, though not Pir Budaq."
       },
       {
-        "shelfmark": "Istanbul Suleymaniye Fatih 4054",
-        "relevance": "Unpublished Imad al-Din Kulliyat copied by Shaykh Mahmud Pir Budaqi at Baghdad; not multi-author, but relevant to Pir Budaq fascicle/corpus context."
+        "shelfmark": "Istanbul Süleymaniye Fatih 04054 / Istanbul TIEM 02030 (disambiguation)",
+        "relevance": "Teece Appendix B entry #26 lists 'Fatih 4054 | Kulliyat of Imad al-Din (d. 1371) | date TBD | Suleymaniye Mosque Library' under Pir Budaq's library. YEK precision-resolution (probes B4 and B5 in data/searches/probe_2026-05-12_teece_corpus_bodleian_yek.json) shows two distinct Imad-i Faqih Kulliyats exist: TIEM 02030 dated 04 Zilhicce 863 AH / 1459 CE is the Pir-Budaq-era manuscript (Penc Genc + Divan structure); Süleymaniye Fatih 04054 dated 898 AH / 1492-93 CE is a later independent copy that postdates Pir Budaq's death by 26 years. Teece's Pir-Budaq-era attribution applies to TIEM 02030, not Fatih 04054. See notes/teece_2016_appendix_b_disambiguation.md for the full disambiguation narrative."
       },
       {
         "shelfmark": "Istanbul University Library, Ghazaliyyat of Amir Shahi",

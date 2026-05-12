@@ -21,7 +21,7 @@ Date 898 AH converts to 1492-1493 CE.
 
 Süleymaniye Fatih 04054 is a 400-folio multi-text composite of the Kulliyat of Imad al-Din Faqih Kermani (d. 1371) dated 898 AH / 1492-1493 CE. It postdates Pir Budaq Qaraqoyunlu's death in 871 AH / 1466 CE by 26 years. It is not a Pir-Budaq-era commission and was therefore mis-classified in Teece Appendix B once the colophon date is consulted.
 
-Teece's Pir-Budaq-era Imad-i Faqih Kulliyat attribution applies instead to TIEM 02030 (Türk ve İslam Eserleri Müzesi, shelfmark 02030), which YEK precision-resolves with `date_ah = 04 Zilhicce 863` (1459 CE). TIEM 02030 contains the same Penc Genc + Divan structure (Tarikatname, Safaname, Husnname, Sohbetname, Muhabbetname, Dehname, Zeyl-i Dehname, Divan) and dates to within Pir Budaq's Baghdad governorship.
+Teece's Pir-Budaq-era Imad-i Faqih Kulliyat attribution applies instead to TIEM 02030 (Türk ve İslam Eserleri Müzesi, shelfmark 02030), which YEK precision-resolves with `date_ah = 04 Zilhicce 863` (1459 CE). TIEM 02030 contains the same Penc Genc + Divan structure (Tarikatname, Safaname, Husnname, Sohbetname, Muhabbetname, Dehname, Zeyl-i Dehname, Divan) and falls within Pir Budaq's governorship years (Fars / Shiraz 1452 to 1459 then Iraq / Baghdad 1460 to 1466). The 4 Zilhicce 863 date converts to 1 October 1459 CE, at the Shiraz-to-Baghdad transition.
 
 ## Implication for the witness census
 

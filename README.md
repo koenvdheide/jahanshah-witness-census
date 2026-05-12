@@ -89,7 +89,7 @@ Research-tool disclosure: the search workflow was executed with substantial assi
 
 ## Search depth and breadth
 
-[`data/searches/`](data/searches/) holds 27 search-session records: 8 initial scope sweeps (2026-05-02) followed by 19 follow-up investigations across 2026-05-10 and 2026-05-11. The follow-ups covered a re-test of nine Iranian portals previously inaccessible from outside Iran, a re-check of the Marashi-Najafi and Tehran University catalogues, six additional regional avenues (Caucasus, Russia, Central Asia, South Asia, provincial Ottoman holdings, and Sufi *tekke* libraries), four detailed sub-investigations of Turkish repositories, a cross-check against the 28 portals listed in a 2023 *Digital Orientalist* survey article, a formal record of nine remaining gaps that require on-site or in-person work, and three individual follow-up queries on specific witnesses.
+[`data/searches/`](data/searches/) holds 28 search-session records: 8 initial scope sweeps (2026-05-02) followed by 20 follow-up investigations across 2026-05-10 through 2026-05-12. The follow-ups covered a re-test of nine Iranian portals previously inaccessible from outside Iran, a re-check of the Marashi-Najafi and Tehran University catalogues, six additional regional avenues (Caucasus, Russia, Central Asia, South Asia, provincial Ottoman holdings, and Sufi *tekke* libraries), four detailed sub-investigations of Turkish repositories, a cross-check against the 28 portals listed in a 2023 *Digital Orientalist* survey article, a formal record of nine remaining gaps that require on-site or in-person work, three individual follow-up queries on specific witnesses, and one structured probe of the Pir Budaq Qaraqoyunlu library candidates surfaced by Teece 2016.
 
 Institutions and aggregators consulted:
 
@@ -123,9 +123,11 @@ Each register entry carries a `verification_status` from a six-value enum (defin
 - [`data/witness_register.json`](data/witness_register.json): the canonical register (11 active entries plus 3 audit-rejected, 14 total).
 - [`data/spec.md`](data/spec.md): field-by-field description of the register's data format.
 - [`data/search_keys.json`](data/search_keys.json): search-key matrix (5 base script families plus 9 `script_families` extensions added in v1.1.0).
-- [`data/searches/`](data/searches/): 27 search-session records (8 v1.0.0 scope sweeps plus 19 v1.1.0 follow-up searches covering regional probes, cross-checks, and a log of remaining gaps).
+- [`data/searches/`](data/searches/): 28 search-session records (8 v1.0.0 scope sweeps plus 20 v1.1.0 follow-up searches covering regional probes, cross-checks, a log of remaining gaps, and the Teece 2016 Pir Budaq corpus probe).
 - [`data/tezkire_extracts/`](data/tezkire_extracts/): 5 verbatim *tezkire* entries on Hakîkî (TEIS Yesevi, Macit / Bilig 2000, Yınanç MEB, Konukcu TDV, Câmî *Münşeʾāt*).
 - [`data/research_log/`](data/research_log/): 5 source extracts and methodological assessments (Macit 2000 full extract, Minorsky 1954 codicology recheck, Nuruosmaniye 04281 decoration extract, Sohrabiabad-Akın 2019 witness list, TEIS Yesevi bibliography).
+- [`data/extracts/`](data/extracts/): structured corpus probes (1 in v1.1.0: Teece 2016 mining of the Pir Budaq Qaraqoyunlu library for Hakîkî witness candidates; net finding zero new witnesses).
+- [`notes/`](notes/): research notes citable from the README (1 in v1.1.0: Teece 2016 Appendix B disambiguation for Süleymaniye Fatih 04054 versus TIEM 02030).
 
 ## Audit trail
 
