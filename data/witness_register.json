@@ -50,7 +50,7 @@
         },
         {
           "author": "Düzgün, D.",
-          "year": "n.d.",
+          "year": null,
           "ref": "academia.edu/43146022 (self-deposited preprint, no peer-review venue identified)",
           "saw_firsthand": false
         },
@@ -255,7 +255,7 @@
         },
         {
           "author": "Düzgün, D.",
-          "year": "n.d.",
+          "year": null,
           "ref": "academia.edu/43146022 (self-deposited preprint, no peer-review venue identified)",
           "saw_firsthand": false,
           "remark": "Düzgün gives different content count: 78 Persian ghazals + 61 Turkish ghazals + 16 tuyughs (vs. Islamisation DB's 32+114+96+34): discrepancy suggests one source uses edition-boilerplate, not codex-specific counting"
@@ -350,8 +350,7 @@
         {
           "author": "Münzevî",
           "year": null,
-          "ref": "Münzevî s. 2301 (Ay 2013 cites)",
-          "saw_firsthand": null
+          "ref": "Münzevî s. 2301 (Ay 2013 cites)"
         }
       ],
       "discovery_source": "candidate-evidence research 2026-05-02; verified via TEIS Yesevi 'HAKÎKÎ, Cihânşâh' authoritative biographical entry on 2026-05-02 (https://teis.yesevi.edu.tr/madde-detay/hakiki-cihansah: Tehran 8198 listed as item 5 in TEIS Yesevi 5-witness Cihanşah Hakîkî roster). Ay 2013 (Dergipark) provides the manuscript description; TEIS provides the attribution.",
@@ -705,6 +704,8 @@
     }
   ],
   "stats": {
+    "total_non_rejected_entries": 11,
+    "total_verified_or_caveated_witnesses": 9,
     "total_witnesses_active": 11,
     "total_entries_including_rejected_and_lost": 14,
     "by_verification": {

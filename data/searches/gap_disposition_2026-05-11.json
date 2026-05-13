@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "session_label": "Gap disposition for 7 tool-shaped gaps deferred from approach B Playwright sweep",
+  "session_label": "Gap disposition for 9 tool-shaped gaps deferred from approach B Playwright sweep",
   "session_id": "gap-disposition-2026-05-11",
   "date": "2026-05-11",
-  "scope": "Formal disposition (Filled / Out-of-Scope-Justified / Deferred-v2.0) for the 7 tool-shaped gaps NOT probed in the 2026-05-11 Playwright sweep (approach B). Companion to probe_2026-05-11_tool_shaped_gaps_playwright.json which covers the 4 probed gaps (manuscript.az + ek.anl.az + manuscript.ge + Chester Beatty).",
+  "scope": "Formal disposition (Filled / Out-of-Scope-Justified / Deferred-v2.0 / Indirectly Covered) for the 9 tool-shaped gaps NOT probed in the 2026-05-11 Playwright sweep (approach B). Companion to probe_2026-05-11_tool_shaped_gaps_playwright.json which covers the 4 probed gaps (manuscript.az + ek.anl.az + manuscript.ge + Chester Beatty).",
   "methodology": "Each gap classified by (a) expected witness yield vs already-known register saturation, (b) resolution feasibility under remote-only constraint, (c) v2.0 relevance. No new probing in this artifact; the disposition itself closes the surface epistemically.",
   "gaps": [
     {
@@ -103,6 +103,8 @@
   ],
   "summary": {
     "total_gaps_addressed": 9,
+    "companion_playwright_gaps_probed": 4,
+    "total_gap_items_with_explicit_handling": 13,
     "dispositions": {
       "OUT_OF_SCOPE_FOR_V1_1_0": 5,
       "FILLED_VIA_ALTERNATIVE_PATH": 1,
@@ -110,7 +112,7 @@
       "INDIRECTLY_COVERED": 1
     },
     "v1_register_impact": "ZERO; no gap requires register modification. 14-entry baseline preserved.",
-    "release_readiness_v1_1_0": "All 10 tool-shaped gaps now have explicit disposition (4 probed via Playwright + 5 OUT_OF_SCOPE_JUSTIFIED + 1 FILLED + 2 DEFERRED_V2_0 + 1 INDIRECTLY_COVERED). Net residual blocker count: 0.",
+    "release_readiness_v1_1_0": "The companion Playwright sweep probed 4 gaps and this file dispositioned 9 additional tool/access gaps, for 13 total items with explicit handling. Net v1.1 release blocker count: 0.",
     "approach_b_completion": "User-selected approach B (Caucasus 3 + CBL + formalize rest) is COMPLETE."
   }
 }

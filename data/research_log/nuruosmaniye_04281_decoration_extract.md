@@ -5,6 +5,8 @@
 **YEK ID**: 178787
 **URL**: https://portal.yek.gov.tr/works/detail/178787
 
+**Current register status note (2026-05-11)**: This extract is superseded for witness-status purposes by the final register entry. A later IIIF visual-confirmation pass read the colophon and reclassified Nuruosmaniye 04281 as `rejected` with `rejection_type: scribal_homonym_misidentification`. The decoration data below is retained as audit material for a non-Cihanşah codex, not as Cihanşah-corpus decoration evidence.
+
 ## Verbatim YEK fields
 
 | Field | Verbatim Value |
@@ -49,22 +51,21 @@ The YEK cataloguer cited Mu'in's *Ferheng-i Fârsī* vol V (the proper-name supp
 
 ## Codicological significance
 
-If this codex IS a Cihanşah Hakîkî divan (probability moderate at best), it would be:
+The final register no longer treats this codex as a Cihanşah Hakîkî witness. Its codicological value for the witness census is therefore audit-only:
 
-- The first Cihanşah witness with detailed catalogued decoration.
-- A 17th-century Ottoman copy: significantly later than the 5 TEIS Yesevi witnesses (1474–16th c.).
-- An aharlı-paper, gilt-tooled shemse-binding object: classic Ottoman decorative codicology.
-- Held under the Osman III waqf seal: a high-prestige Ottoman provenance.
+- It records the type of rich YEK decoration data that can be recovered for misattributed candidates.
+- It is a 17th-century Ottoman copy with aharlı paper and a gilt-tooled shemse binding.
+- Its decoration data is not evidence for the Cihanşah corpus and is not useful as a Karakoyunlu/Aq-Qoyunlu comparator for BL Or 9493's paper question.
 
-**Decoration profile**: classic 17th-century Ottoman shemse cilt (medallion binding) with sized cream paper. Codicologically NOT useful as a Karakoyunlu/Aq-Qoyunlu comparator for BL Or 9493's paper question, since dating gap is 200+ years.
+**Decoration profile**: classic 17th-century Ottoman shemse cilt (medallion binding) with sized cream paper. Codicologically irrelevant to the verified Cihanşah corpus after the colophon-based rejection.
 
 ## recommendation
 
-If decoration data confirmation is desired:
-1. Read Mu'in's vol V pp. 961-962 to disambiguate Cihanşah vs Yusuf vs other Hakîkî.
-2. Perform manual visual confirmation of f. 1a to capture f. 1a (titlepage with seals/headpiece if present): but YEK shows `has_digitized_images: false`, so direct images are not available.
-3. ILL or Süleymaniye reading-room visit for direct examination of f. 1a-2b (likely opening illumination location).
+If further audit confirmation is desired:
+1. Collate the underlying text against Yusuf Hakiki editions to identify the non-Cihanşah author more precisely.
+2. Recheck f. 1a-2b through YEK/IIIF or a reading-room visit only if the binding/seal evidence is needed for a separate Ottoman codicology question.
+3. Do not promote this entry without new primary evidence that overcomes the colophon-based scribal-homonym rejection.
 
 ## Witness register implication
 
-Final register status: `candidate_probably_yusuf_hakiki_or_other_homonym`. Mu'in V disambiguation remains the gating step before any promotion to verified Cihanşah witness; if confirmed Cihanşah, the codex would extend the witness pool with an Ottoman 17th-c. copy outside the TEIS Yesevi roster.
+Final register status: `rejected`. The terminal rationale is in `data/witness_register.json` under `nuruosmaniye_04281`: the colophon names the scribe as Jahanshah b. Baba Gejelu, not the author, and the codex fails the Cihanşah attribution test on size, genre, date/context, and authorial silence.

@@ -1,0 +1,4 @@
+[features]
+codex_hooks = true
+
+# Local schema/release guardrails. Hook routing lives in .codex/hooks.json.

@@ -3,6 +3,7 @@
   "session_label": "Avenues 5+6 Ottoman provincial tezkires + Sufi tekke libraries (main-context replacement for lost Subagent C output)",
   "session_id": "avenue-provincial-ottoman-sufi-maincontext-2026-05-11",
   "date": "2026-05-11",
+  "current_status_note": "Superseded for Ottoman-current-status purposes by probe_2026-05-11_ottoman_chunks_synthesis.json, which deepened this shallow site-restricted pass through four focused chunk probes.",
   "scope": "Probe Turkish institutional manuscript portals (yazmalar.gov.tr, Türkiye Yazma Eserler Başkanlığı yek.gov.tr, ISAM new home katalog.isam.org.tr, Milli Kütüphane dijital-kutuphane.mkutup.gov.tr, Diyanet yazmaeserler.diyanet.gov.tr) for any Cihanşah Qaraqoyunlu / Hakîkî witness not in v1.0 register. Includes Sufi tekke holdings (Konya Mevlana, Bektaşi-affiliated, Bursa where Yusuf Hakîkî Bursavi taught). Replaces the lost Subagent C output (API overload terminated the agent after 61 tool uses without writing the output file).",
   "context_note": "Subagent C (Ottoman provincial + Sufi) was launched and worked for approximately 32 minutes / 61 tool uses, then returned 'API Error: Overloaded' on its final summary write. No output file was written. This main-context probe is a tighter-scope replacement using site-restricted Google indexing rather than direct portal interaction.",
   "method_summary": {

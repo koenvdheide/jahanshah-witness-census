@@ -18,30 +18,33 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.20113822"
 abstract: >
-  A codicological inventory of manuscript witnesses to the Dīvān
-  of Jahanshah Qaraqoyunlu (d. 872 AH / 1467 CE; pen name Ḥaqīqī / Hakîkî),
-  Qaraqoyunlu ruler-poet. The census documents 9 verified Jahanshah
-  witnesses (5 on the TEIS Yesevi roster, 1 institutional fragment,
-  3 Alevi shrine witnesses in the Ocak tradition: 1 Anatolian
-  (Diyarbakır Ulutürk) and 2 Iranian Azerbaijani (Ilkhchi Kırklar
-  Ocağı)), plus 1 candidate flagged as probably non-Jahanshah and
-  1 lost-attested-only (Diyarbakır YE per Cunbur 1999). The register
+  A codicological inventory of manuscript witnesses to the Dīvān of Jahanshah
+  Qaraqoyunlu (d. 872 AH / 1467 CE; pen name Ḥaqīqī / Hakîkî), Qaraqoyunlu
+  ruler-poet.
+  The census documents 9 verified or caveated Jahanshah witnesses (5 on the TEIS
+  Yesevi roster, 1 institutional fragment, 3 Alevi shrine witnesses in the Ocak
+  tradition: 1 Anatolian (Diyarbakır Ulutürk) and 2 Iranian Azerbaijani (Ilkhchi
+  Kırklar Ocağı)), plus 1 candidate flagged as probably non-Jahanshah and 1
+  lost-attested-only entry (Diyarbakır YE per Cunbur 1999). The register
   additionally preserves 3 audit-rejected entries documenting specific
-  attribution-claim rebuttals; see the README Audit trail section for
-  details. Routine search false-positives are recorded separately in
-  the per-session search JSONs under data/searches/, not the register
-  itself.
-  Includes a search-key matrix covering modern Latin, 19th-c. Orientalist,
-  Soviet-Cyrillic, Arabic-script, and catalogue-context forms across
-  Persian, Turkish, Ottoman Turkish, and Azerbaijani Turkic, plus a
-  script_families block of 9 additional script traditions added in v1.1.0
-  (Russian Cyrillic, Az Latin/Cyrillic, Georgian, Uzbek Latin/Cyrillic,
-  Tajik Cyrillic, Devanagari, Urdu nastaʿliq); 5 tezkire entries plus
-  5 research-log extracts on Hakîkî (verbatim sample verses where available).
-  The Alevi shrine corpus
-  (Anatolian and Iranian Azerbaijani Ocak tradition) preserves eleven
-  ghazals not present in the institutional editions examined, plus a
-  complete unphotographed divan codex.
+  attribution-claim rebuttals; see the README Audit trail section for details.
+  Routine search false-positives are recorded separately in the per-session
+  search JSONs under data/searches/, not in the register itself. Includes a
+  search-key matrix covering modern Latin, 19th-c. Orientalist, Soviet-Cyrillic,
+  Arabic-script, and catalogue-context forms across Persian, Turkish, Ottoman
+  Turkish, and Azerbaijani Turkic, plus a script_families block of 9 additional
+  script traditions added in v1.1.0 (Russian Cyrillic, Az Latin/Cyrillic,
+  Georgian, Uzbek Latin/Cyrillic, Tajik Cyrillic, Devanagari, Urdu nastaʿliq); 5
+  tezkire entries plus 5 research-log extracts on Hakîkî (verbatim sample verses
+  where available).
+  The Alevi shrine corpus (Anatolian and Iranian Azerbaijani Ocak tradition)
+  preserves eleven ghazals not present in the institutional editions examined,
+  plus a complete unphotographed divan codex.
+  Methodology: Witness census combining aggregator sweeps (~30 union
+  catalogues), tezkire / reference extraction (10 extract files: 5 tezkire
+  entries plus 5 research-log extracts), structured corpus probes (Teece 2016
+  Pir Budaq library), mecmûʿa adjacency mining, auction-house archives, scribe-
+  name search, printed-catalogue OCR backchain, and modern editor backchain.
 keywords:
   - "Islamic manuscripts"
   - "Codicology"

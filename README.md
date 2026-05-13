@@ -67,7 +67,7 @@ The corpus is not a corpus of decorated manuscripts: it is a poetry-witness cens
 
 Source types in scope:
 
-- Witness, candidate, and audit entries (11 active register entries plus 3 audit-rejected entries; 14 total): full divans, fragmentary copies, *mecmuʿa* / *jung* / *cönk* anthologies containing one or more Hakîkî ghazal, candidates with disputed attribution, and documented audit-rejected leads.
+- Witness, candidate, and audit entries (11 non-rejected register entries: 9 verified or caveated witnesses, 1 candidate, 1 lost-attested entry; plus 3 audit-rejected entries; 14 total): full divans, fragmentary copies, *mecmuʿa* / *jung* / *cönk* anthologies containing one or more Hakîkî ghazal, candidates with disputed attribution, and documented audit-rejected leads.
 - Ancillary scholarly sources (consulted but not register entries): 5 *tezkire* entries in [`data/tezkire_extracts/`](data/tezkire_extracts/) plus 5 research-log extracts in [`data/research_log/`](data/research_log/), totalling 10 reference extracts on Hakîkî with verbatim sample verses where retrieved.
 
 ## Methodology
@@ -89,14 +89,14 @@ Research-tool disclosure: the search workflow was executed with substantial assi
 
 ## Search depth and breadth
 
-[`data/searches/`](data/searches/) holds 28 search-session records: 8 initial scope sweeps (2026-05-02) followed by 20 follow-up investigations across 2026-05-10 through 2026-05-12. The follow-ups covered a re-test of nine Iranian portals previously inaccessible from outside Iran, a re-check of the Marashi-Najafi and Tehran University catalogues, six additional regional avenues (Caucasus, Russia, Central Asia, South Asia, provincial Ottoman holdings, and Sufi *tekke* libraries), four detailed sub-investigations of Turkish repositories, a cross-check against the 28 portals listed in a 2023 *Digital Orientalist* survey article, a formal record of nine remaining gaps that require on-site or in-person work, three individual follow-up queries on specific witnesses, and one structured probe of the Pir Budaq Qaraqoyunlu library candidates surfaced by Teece 2016.
+[`data/searches/`](data/searches/) holds 28 search-session records: 8 initial scope sweeps (2026-05-02) followed by 20 follow-up investigations across 2026-05-10 through 2026-05-12. The follow-ups covered a re-test of nine Iranian portals previously inaccessible from outside Iran, a re-check of the Marashi-Najafi and Tehran University catalogues, six additional regional avenues (Caucasus, Russia, Central Asia, South Asia, provincial Ottoman holdings, and Sufi *tekke* libraries), four detailed sub-investigations of Turkish repositories, a cross-check against the 28 portals listed in a 2023 *Digital Orientalist* survey article, a formal disposition record for nine tool/access gaps (no v1.1 release blockers; a smaller subset deferred to v2 or in-person work), three individual follow-up queries on specific witnesses, and one structured probe of the Pir Budaq Qaraqoyunlu library candidates surfaced by Teece 2016. The current/superseded status of search artifacts is indexed in [`data/searches/index.json`](data/searches/index.json).
 
 Institutions and aggregators consulted:
 
 - UK and Anglosphere: Fihrist (British Library, Bodleian, Cambridge, John Rylands, and other UK university collections).
 - German-speaking world: Qalamos (Staatsbibliothek Berlin, Bayerische Staatsbibliothek Munich, Österreichische Nationalbibliothek Vienna, Universitäts- und Landesbibliothek Halle / MENA-DOC, Staats- und Universitätsbibliothek Hamburg, Universitätsbibliothek Tübingen, Universitätsbibliothek Leipzig).
 - Turkey: portal.yek.gov.tr (the consolidated state portal covering Süleymaniye, Nuruosmaniye, Esad Efendi, Hamidiye, and many others); Milli Kütüphane Ankara; the ISAM (İslam Araştırmaları Merkezi) Yordam catalogue; the TEIS Yesevi biographical encyclopaedia; the Islamisation of Anatolia database; and the Diyanet İslam Ansiklopedisi. The older yazmalar.gov.tr portal was confirmed no longer functional.
-- Iran: National Library and Archives (NLAI), Tehran University Central Library, Majlis Library, Astan-e Quds Razavi (Mashhad), Marashi-Najafi (Qom), Bonyad-i Muhaqqiq Tabataba'i, Malek National Library, lib.eshia.ir, and ketab.ir. All nine Iranian portals were inaccessible from outside Iran during the search window. The recovery routes used were: full-text search of digitised printed catalogues on the Internet Archive; cross-checking the 2023 *Digital Orientalist* survey article; consulting the TEIS Yesevi biographical encyclopaedia (which indexes the standard five-witness roster for Cihanşah); and applying Russian-Cyrillic and Azerbaijani-Cyrillic transliterations of Cihanşah's name to surface Iranian Azerbaijani holdings indirectly through neighbouring catalogues.
+- Iran: National Library and Archives (NLAI), Tehran University Central Library, Majlis Library, Astan-e Quds Razavi (Mashhad), Marashi-Najafi (Qom), Bonyad-i Muhaqqiq Tabataba'i, Malek National Library, lib.eshia.ir, and ketab.ir. The relevant manuscript-catalogue endpoints remained inaccessible, blocked, down, or non-searchable from the remote search environment; two parent/landing surfaces became reachable in the 2026-05-10 retry but did not translate into executable manuscript-catalogue search. The recovery routes used were: full-text search of digitised printed catalogues on the Internet Archive; cross-checking the 2023 *Digital Orientalist* survey article; consulting the TEIS Yesevi biographical encyclopaedia (which indexes the standard five-witness roster for Cihanşah); and applying Russian-Cyrillic and Azerbaijani-Cyrillic transliterations of Cihanşah's name to surface Iranian Azerbaijani holdings indirectly through neighbouring catalogues.
 - Caucasus: Matenadaran (Yerevan), Azerbaijan National Library (Baku), AMEA Institute of Manuscripts (Baku), the Georgian National Centre of Manuscripts (Tbilisi), and the Kekelidze Institute of Manuscripts.
 - Russian Federation: Institute of Oriental Manuscripts (IOM-RAS, St. Petersburg), Russian State Library (RSL Moscow), Kazan Federal University, and the Tatar National Knigafund.
 - Central Asia: Beruni Institute of Oriental Studies (Tashkent), Tajik National Library (Dushanbe), and the Rudaki Institute of Language and Literature (Dushanbe). These collections are largely accessible only on-site; online catalogues are partial.
@@ -120,14 +120,27 @@ Each register entry carries a `verification_status` from a six-value enum (defin
 
 ## Repository contents
 
-- [`data/witness_register.json`](data/witness_register.json): the canonical register (11 active entries plus 3 audit-rejected, 14 total).
+- [`data/witness_register.json`](data/witness_register.json): the canonical register (11 non-rejected entries: 9 verified or caveated witnesses, 1 candidate, 1 lost-attested entry; plus 3 audit-rejected, 14 total).
+- [`data/metadata.json`](data/metadata.json): canonical publication metadata used to render `.zenodo.json` and `CITATION.cff`.
 - [`data/spec.md`](data/spec.md): field-by-field description of the register's data format.
 - [`data/search_keys.json`](data/search_keys.json): search-key matrix (5 base script families plus 9 `script_families` extensions added in v1.1.0).
-- [`data/searches/`](data/searches/): 28 search-session records (8 v1.0.0 scope sweeps plus 20 v1.1.0 follow-up searches covering regional probes, cross-checks, a log of remaining gaps, and the Teece 2016 Pir Budaq corpus probe).
+- [`data/searches/`](data/searches/): 28 search-session records (8 v1.0.0 scope sweeps plus 20 v1.1.0 follow-up searches covering regional probes, cross-checks, a log of remaining gaps, and the Teece 2016 Pir Budaq corpus probe), with current/superseded status summarized in [`data/searches/index.json`](data/searches/index.json).
 - [`data/tezkire_extracts/`](data/tezkire_extracts/): 5 verbatim *tezkire* entries on Hakîkî (TEIS Yesevi, Macit / Bilig 2000, Yınanç MEB, Konukcu TDV, Câmî *Münşeʾāt*).
 - [`data/research_log/`](data/research_log/): 5 source extracts and methodological assessments (Macit 2000 full extract, Minorsky 1954 codicology recheck, Nuruosmaniye 04281 decoration extract, Sohrabiabad-Akın 2019 witness list, TEIS Yesevi bibliography).
 - [`data/extracts/`](data/extracts/): structured corpus probes (1 in v1.1.0: Teece 2016 mining of the Pir Budaq Qaraqoyunlu library for Hakîkî witness candidates; net finding zero new witnesses).
 - [`notes/`](notes/): research notes citable from the README (1 in v1.1.0: Teece 2016 Appendix B disambiguation for Süleymaniye Fatih 04054 versus TIEM 02030).
+
+## Release checks
+
+Before publishing or tagging a new version, run:
+
+```powershell
+python scripts\release_check.py
+```
+
+The command validates register counts, schema drift, search/extract indexes, publication metadata rendering, JSON parseability, Codex hook tests, and whitespace issues. The manual checklist is in [`docs/release-checklist.md`](docs/release-checklist.md).
+
+Codex sessions in this repository also use guarded hooks under [`.codex/hooks/`](.codex/hooks/) to block direct edits to generated metadata and to catch unindexed search or *tezkire* artifacts during agent writes.
 
 ## Audit trail
 
@@ -153,7 +166,7 @@ Research-grade corpus, not a critical edition. Several entries carry open-access
 
 ### Known limitations
 
-The Iranian portion of the corpus is under-investigated rather than exhausted, since the nine Iranian institutional portals were inaccessible from outside Iran during the search window and no on-site or in-person research was performed; a future revision with Iranian collaborator access could substantially change the witness count. The Ilkhchi Kırklar Ocağı pirs' archive holds a complete unphotographed divan codex of potentially high textual value, but access depends on shrine-community consent and has not been granted to scholars outside the local pir tradition; field collaboration with Sohrabiabad and Akın or with Iranian Azerbaijani Alevi-studies specialists is the documented path for extending that coverage.
+The Iranian portion of the corpus is under-investigated rather than exhausted, since the relevant Iranian manuscript-catalogue endpoints remained inaccessible or non-searchable from the remote search environment and no on-site or in-person research was performed; a future revision with Iranian collaborator access could substantially change the witness count. The Ilkhchi Kırklar Ocağı pirs' archive holds a complete unphotographed divan codex of potentially high textual value, but access depends on shrine-community consent and has not been granted to scholars outside the local pir tradition; field collaboration with Sohrabiabad and Akın or with Iranian Azerbaijani Alevi-studies specialists is the documented path for extending that coverage.
 
 ### Planned v2.0 scope
 

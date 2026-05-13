@@ -20,3 +20,6 @@ venv/
 *.log
 *.out
 *.toc
+
+# Local source PDFs used for extraction; deposit keeps structured extracts instead.
+*.pdf

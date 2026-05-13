@@ -3,6 +3,7 @@
   "session_label": "Discovery-completeness closure of 6 residual gaps from 2023 Digital Orientalist article",
   "session_id": "residual-gaps-closure-2026-05-11",
   "date": "2026-05-11",
+  "current_status_note": "Intermediate closure artifact. The final current-status artifact for Digital Orientalist residuals is probe_2026-05-11_do2023_residual_closure_subagent.json, which revisits partially closed MENA-DOC/HathiTrust paths and adds DLME/OPenn before concluding all 28 resources are exhausted for v1.1 witness discovery.",
   "scope": "Per-portal Cihanşah / Hakîkî / Yusuf Hakîkî query battery against the 6 residual gaps documented in crosscheck_2026-05-11_digital_orientalist_2023_resources.json: Vienna ONB Sondersammlungen, Berlin Staatsbibliothek Digital Library, MENA-DOC / MENAlib Halle, Bologna historica.unibo.it, HathiTrust, and Chester Beatty viewer.cbl.ie. Discovery-completeness goal: actual full-battery query against each portal's catalogue interface, with any non-zero hit verified to either confirm a new witness candidate or document the false-positive class.",
   "geopolitical_caveat": "Not applicable; all 6 portals are in Western countries unaffected by Iranian wartime infrastructure shutdowns.",
   "method_summary": {

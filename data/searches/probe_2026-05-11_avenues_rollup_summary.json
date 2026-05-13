@@ -3,6 +3,7 @@
   "session_label": "Roll-up summary: 6 Gemini-recommended new-witness-discovery avenues + Digital Orientalist 2023 residual closure",
   "session_id": "avenues-rollup-2026-05-11",
   "date": "2026-05-11",
+  "current_status_note": "Partially superseded by later 2026-05-11 artifacts and the current witness_register.json. In particular, Nuruosmaniye 04281 was reclassified from candidate_probably_yusuf_hakiki_or_other_homonym to rejected, changing current by_verification to verified=8, verified_with_attribution_caveat=1, candidate_probably_non_cihansah=1, candidate_probably_yusuf_hakiki_or_other_homonym=0, lost_witness_attested_only=1, rejected=3, pending=0. The Ottoman avenue was deepened by probe_2026-05-11_ottoman_chunks_synthesis.json.",
   "scope": "Synthesis across the 5 per-avenue probe artifacts produced this round (Caucasus main-context, South Asia subagent A, Central Asia/Russia/Yerevan subagent B, Ottoman provincial/Sufi main-context replacing failed subagent C, DO 2023 residual closure subagent D). Documents total reach, witness yield, v2.0 scope additions, methodological findings, and v1.1.0 release-candidate readiness.",
   "parent_context": "Builds on v1.0.0 deposit at GitHub HEAD 8baca71. v1.0.0 witness_register.json has 14 active entries + 2 rejected (both Baku-related). This roll-up is the v1.1.0 release candidate batch.",
   "geopolitical_caveat": "Iranian wartime intermittent shutdowns affect Iranian portal reachability (NLAI, Tehran U utdlib, Astan-e Quds, Malek, Majles, lib.eshia.ir, ketab.ir). Az/Geo/Am Caucasus portals are not affected. VPN was OFF during this round; results reflect direct US/UK routing.",
@@ -39,7 +40,7 @@
         "rationale": "Adds documented institutional-history context to an existing register entry. Increases scholarly defensibility of the matenadaran_965 entry by clarifying the popular-history-to-institutional-record mapping."
       }
     ],
-    "no_new_witnesses": "Zero entries added to witnesses[]. by_verification array remains: verified=8, verified_with_attribution_caveat=1, candidate_probably_non_cihansah=1, lost_witness_attested_only=1, candidate_probably_yusuf_hakiki_or_other_homonym=1, rejected=2 [sum=14, unchanged].",
+    "no_new_witnesses": "Zero entries added to witnesses[]. Current by_verification after later Nuruosmaniye reclassification: verified=8, verified_with_attribution_caveat=1, candidate_probably_non_cihansah=1, lost_witness_attested_only=1, candidate_probably_yusuf_hakiki_or_other_homonym=0, rejected=3, pending=0 [sum=14, unchanged].",
     "v2_0_backlog_additions": [
       {"id": "v2-chancery-bodleian-pers-d-84", "source": "subagent A South Asia probe", "content": "Bodleian MS Pers d. 84 (Vol III entry 2711) is an insha collection containing one Cihansah firman to Sultan Muhammad II ~1455. Adds to asnad.org corpus (21-23 docs) for v2.0 chancery scope."},
       {"id": "v2-chancery-kostikyan-persian-decrees", "source": "subagent B Central Asia/Russia/Yerevan probe", "content": "Kostikyan, Persian Decrees vol III (2005) + vol IV (2008). Yerevan-published. Parallel chancery-document corpus to asnad.org. Paywalled on Academia.edu; ILL or direct purchase needed."},
@@ -73,7 +74,7 @@
   ],
   "release_readiness_v1_1": {
     "v1_register_unchanged": true,
-    "by_verification_unchanged": "verified=8, verified_with_attribution_caveat=1, candidate_probably_non_cihansah=1, lost_witness_attested_only=1, candidate_probably_yusuf_hakiki_or_other_homonym=1, rejected=2 [total=14]",
+    "by_verification_current_after_later_reclassification": "verified=8, verified_with_attribution_caveat=1, candidate_probably_non_cihansah=1, lost_witness_attested_only=1, candidate_probably_yusuf_hakiki_or_other_homonym=0, rejected=3, pending=0 [total=14]",
     "artifacts_to_commit": [
       "data/searches/probe_2026-05-11_avenue_caucasus_maincontext.json",
       "data/searches/probe_2026-05-11_avenue_south_asia_subagent.json",

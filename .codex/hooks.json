@@ -1,0 +1,42 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import pathlib,runpy; cwd=pathlib.Path.cwd().resolve(); root=next((p for p in [cwd,*cwd.parents] if (p/'.codex/hooks/guard.py').is_file()), cwd); runpy.run_path(str(root/'.codex/hooks/guard.py'), run_name='__main__')\"",
+            "timeout": 15,
+            "statusMessage": "Checking witness-census write guard..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|apply_patch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import pathlib,runpy; cwd=pathlib.Path.cwd().resolve(); root=next((p for p in [cwd,*cwd.parents] if (p/'.codex/hooks/guard.py').is_file()), cwd); runpy.run_path(str(root/'.codex/hooks/guard.py'), run_name='__main__')\"",
+            "timeout": 30,
+            "statusMessage": "Validating witness-census data..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -c \"import pathlib,runpy; cwd=pathlib.Path.cwd().resolve(); root=next((p for p in [cwd,*cwd.parents] if (p/'.codex/hooks/guard.py').is_file()), cwd); runpy.run_path(str(root/'.codex/hooks/guard.py'), run_name='__main__')\"",
+            "timeout": 60,
+            "statusMessage": "Running witness-census release gate..."
+          }
+        ]
+      }
+    ]
+  }
+}

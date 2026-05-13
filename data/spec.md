@@ -4,16 +4,17 @@ This document describes the structure of `witness_register.json`, the primary ar
 
 ## Schema version
 
-`schema_version: 1`. Generated 2026-05-02.
+`schema_version: 1`. Generated 2026-05-11.
 
 ## Top-level structure
 
 ```json
 {
   "schema_version": 1,
-  "generated": "2026-05-02",
+  "generated": "2026-05-11",
   "purpose": "...",
   "rejection_inclusion_criterion": "...",
+  "candidate_inclusion_criterion": "...",
   "witnesses": [ ... ],
   "stats": { ... },
   "teis_yesevi_roster": [ ... ]
@@ -83,10 +84,10 @@ The `decoration` object records paper, illumination, and binding observations. C
 
 | Field | Type | Description |
 |---|---|---|
-| `scholarly_attestation` | array of object | Each object has `author`, `year`, `ref`, and optionally `saw_firsthand` (boolean or string `"likely"`; omitted for attestation objects where firsthand status is not assessed, e.g. authoritative encyclopedia entries). May carry an optional `remark` field for verbatim cross-collation evidence. |
+| `scholarly_attestation` | array of object | Each object has `author`, `year`, `ref`, and optionally `saw_firsthand` (boolean or string `"likely"`; omitted for attestation objects where firsthand status is not assessed, e.g. authoritative encyclopedia entries). `year` may be an integer, string, or `null` when undated. May carry an optional `remark` field for verbatim cross-collation evidence. |
 | `discovery_source` | string | URL or printed-catalogue reference that originally surfaced the witness. |
 | `verification_status` | string | See enum below. |
-| `verification_caveat` | string | Optional free-text qualification of `verified` or candidate status. |
+| `verification_caveat` | string | Optional free-text qualification of verified, candidate, or audit-rejected status. For rejected entries, use only when the caveat preserves the reclassification path and keep the terminal rationale in `rejection_reason`. |
 | `notes` | string \| null | Free-text notes on dating, scribal hand, or context. |
 
 ## Witness entry: observed extension fields
@@ -124,6 +125,8 @@ The `stats` object aggregates counts (`by_completeness` and `by_country` count a
 
 ```json
 {
+  "total_non_rejected_entries": <int>,
+  "total_verified_or_caveated_witnesses": <int>,
   "total_witnesses_active": <int>,
   "total_entries_including_rejected_and_lost": <int>,
   "by_verification": { "<status>": <count>, ... },
@@ -132,7 +135,7 @@ The `stats` object aggregates counts (`by_completeness` and `by_country` count a
 }
 ```
 
-The two top-line counts: `total_witnesses_active` excludes entries with `verification_status: rejected` (entries with `lost_witness_attested_only` are counted among the active total). `total_entries_including_rejected_and_lost` is the audit-preserved total of all entries.
+The preferred top-line count is `total_non_rejected_entries`: it excludes entries with `verification_status: rejected` and includes verified/caveated witnesses, candidates, and lost-attested entries. `total_verified_or_caveated_witnesses` counts only `verified` plus `verified_with_attribution_caveat`. `total_witnesses_active` is retained as a compatibility alias for `total_non_rejected_entries`, but README prose should avoid the ambiguous word "active" when precision matters. `total_entries_including_rejected_and_lost` is the audit-preserved total of all entries.
 
 ## Verification rule
 

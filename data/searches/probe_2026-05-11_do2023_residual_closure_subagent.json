@@ -3,6 +3,7 @@
   "session_label": "Closure of 4 unclosed Digital Orientalist 2023 residual gaps: MENA-DOC, HathiTrust, DLME, OPenn",
   "session_id": "do2023-residual-closure-subagent-2026-05-11",
   "date": "2026-05-11",
+  "current_status_note": "Current final closure artifact for Digital Orientalist 2023 residuals. Use this after crosscheck_2026-05-11_digital_orientalist_2023_resources.json for release-status questions.",
   "scope": "Per-portal Cihansah / Hakiki / Jahanshah / Qaraqoyunlu query battery against the 4 residual or inconclusive gaps from the 2023 Digital Orientalist article that were NOT closed in probe_2026-05-11_residual_gaps_closure.json. The prior closure round covered 6 portals (Vienna ONB, Berlin Staatsbibliothek, MENA-DOC partially, Bologna, HathiTrust partially, Chester Beatty). This round revisits MENA-DOC and HathiTrust at finer granularity, and adds DLME and OPenn which had only browse-level coverage in the cross-check round. Method respects the no-Playwright constraint by relying on WebSearch site-restricted queries, WebFetch against surfaced query endpoints, and HTML-source inspection for form action URLs.",
   "geopolitical_caveat": "Not applicable; all 4 portals are in Germany, USA, or non-Iranian jurisdictions.",
   "method_summary": {

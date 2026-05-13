@@ -1,5 +1,6 @@
 {
   "source_pdf": "Teece 2016-Vessels of Verse, Ships of Song.pdf",
+  "source_pdf_deposit_note": "Local working PDF filename only; PDFs are ignored by .gitignore and are not part of the structured deposit.",
   "extraction_metadata": {
     "extraction_tool": "Poppler pdftotext -layout -enc UTF-8 via PowerShell. Python/PyMuPDF was requested, but no usable Python executable was available.",
     "pdf_pages_detected": 744,
@@ -370,20 +371,10 @@
         "place_of_production": "Shiraz",
         "source_reference": "not stated in Appendix B",
         "teece_appendix_b_page": 335,
-        "entry_transcription": "863 / 1459 - Colophon only; Istanbul, Topkapi, Hazine 2153, fol. 21b; Copied in Shiraz by Shaykh Mahmud Pir Budaqi"
-      },
-      {
-        "shelfmark": "Hazine 2153, fol. 21b",
-        "current_location": "Istanbul, Topkapi",
-        "text": "Colophon only",
-        "date_ah": "863",
-        "date_ce": "1459",
-        "calligrapher_if_named": "Shaykh Mahmud",
-        "dedication_if_named": null,
-        "place_of_production": "Shiraz",
-        "source_reference": "not stated in Appendix B",
-        "teece_appendix_b_page": 335,
-        "entry_transcription": "863 / 1459 - Colophon only (dated the last ten days of Dhu'l Qada 863 / 18-28 September 1459); Istanbul, Topkapi, Hazine 2153, fol. 21b; Copied in Shiraz by Shaykh Mahmud"
+        "entry_transcription": "863 / 1459 - Colophon only; Istanbul, Topkapi, Hazine 2153, fol. 21b; Copied in Shiraz by Shaykh Mahmud Pir Budaqi",
+        "source_rows_merged": 2,
+        "alternate_entry_transcription": "863 / 1459 - Colophon only (dated the last ten days of Dhu'l Qada 863 / 18-28 September 1459); Istanbul, Topkapi, Hazine 2153, fol. 21b; Copied in Shiraz by Shaykh Mahmud",
+        "deduplication_note": "Two Appendix B rows described the same shelfmark/location/text/date object with different calligrapher/date-detail wording. Merged here to prevent downstream double-counting by compound manuscript key."
       },
       {
         "shelfmark": "Hazine 2153, fol. 6a",
