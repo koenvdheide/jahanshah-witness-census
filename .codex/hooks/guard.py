@@ -19,6 +19,7 @@ WATCHED_RELEASE_PATHS = {
     "CITATION.cff",
     "docs/release-checklist.md",
 }
+SHELL_TOOL_NAMES = {"bash", "shell_command", "unified_exec", "exec_command"}
 
 
 @dataclass(frozen=True)
@@ -113,6 +114,11 @@ def extract_touches(payload: dict, root: Path = ROOT) -> list[Touch]:
     return _extract_file_input_touches(tool_name, tool_input, root)
 
 
+def _is_shell_tool(tool_name: str) -> bool:
+    normalized = tool_name.strip().lower()
+    return normalized in SHELL_TOOL_NAMES or normalized.endswith(".shell_command")
+
+
 def _hook_mode() -> str:
     return os.environ.get("JWC_HOOK_MODE", "blocking").strip().lower()
 
@@ -196,10 +202,13 @@ def _run(command: list[str], root: Path) -> Decision:
 
 
 def postflight(payload: dict, root: Path = ROOT) -> Decision:
+    tool_name = str(payload.get("tool_name") or payload.get("tool") or "")
     touches = extract_touches(payload, root)
-    if not any(_is_validation_relevant(touch.path) for touch in touches):
-        return Decision(True)
-    return _run([sys.executable, "scripts/validate_dataset.py"], root)
+    if any(_is_validation_relevant(touch.path) for touch in touches):
+        return _run([sys.executable, "scripts/validate_dataset.py"], root)
+    if _is_shell_tool(tool_name) and _dirty_release_paths(root):
+        return _run([sys.executable, "scripts/release_check.py"], root)
+    return Decision(True)
 
 
 def _dirty_release_paths(root: Path) -> list[str]:
@@ -275,7 +284,7 @@ def run(raw: str, root: Path = ROOT) -> tuple[int, str, str]:
         decision = postflight(payload, root)
         if decision.allowed:
             return 0, "", ""
-        return 0, _deny_json(event, decision.reason), ""
+        return 0, _stop_json(decision.reason), ""
 
     if event == "Stop":
         decision = stop_check(root)

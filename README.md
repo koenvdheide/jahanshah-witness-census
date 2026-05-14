@@ -140,7 +140,7 @@ python scripts\release_check.py
 
 The command validates register counts, schema drift, search/extract indexes, publication metadata rendering, JSON parseability, Codex hook tests, and whitespace issues. The manual checklist is in [`docs/release-checklist.md`](docs/release-checklist.md).
 
-Codex sessions in this repository also use guarded hooks under [`.codex/hooks/`](.codex/hooks/) to block direct edits to generated metadata and to catch unindexed search or *tezkire* artifacts during agent writes.
+Codex sessions in this repository also use guarded hooks under [`.codex/hooks/`](.codex/hooks/) to block direct file-tool edits to generated metadata, catch unindexed search or *tezkire* artifacts during agent writes, and rerun the release gate after shell-style tools leave watched release paths dirty.
 
 ## Audit trail
 

@@ -173,7 +173,7 @@ Every entry in `witness_register.json` carries an evidence trail that resolves i
   "scholarly_attestation": [
     {"author": "Minorsky", "year": 1954, "ref": "BSOAS 16/2: 271-297", "saw_firsthand": true},
     {"author": "Macit", "year": 2000, "ref": "Bilig 13: 9-17", "saw_firsthand": true},
-    {"author": "Düzgün, D.", "year": "n.d.", "ref": "academia.edu/43146022 (self-deposited preprint)", "saw_firsthand": false},
+    {"author": "Düzgün, D.", "year": null, "ref": "academia.edu/43146022 (self-deposited preprint)", "saw_firsthand": false},
     {"author": "Alemdârî", "year": "2001 / 1379 SH", "ref": "...", "saw_firsthand": true}
   ],
   "discovery_source": "https://www.fihrist.org.uk/catalog/manuscript_6481",

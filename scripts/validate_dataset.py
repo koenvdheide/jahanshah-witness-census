@@ -66,6 +66,40 @@ def validate_register(errors: list[str]) -> None:
             errors,
             "stats.total_non_rejected_entries must equal non-rejected witness count",
         )
+    if stats.get("total_witnesses_active") != len(non_rejected):
+        fail(
+            errors,
+            "stats.total_witnesses_active must equal non-rejected witness count",
+        )
+    if stats.get("total_entries_including_rejected_and_lost") != len(witnesses):
+        fail(
+            errors,
+            "stats.total_entries_including_rejected_and_lost must equal total witness entry count",
+        )
+
+    actual_by_completeness = Counter(w["completeness"] for w in non_rejected)
+    nonzero_completeness = {
+        completeness: count
+        for completeness, count in stats["by_completeness"].items()
+        if count
+    }
+    if nonzero_completeness != dict(actual_by_completeness):
+        fail(
+            errors,
+            "stats.by_completeness nonzero buckets do not match active observed completeness values",
+        )
+
+    actual_by_country = Counter(w["country"] for w in non_rejected)
+    nonzero_countries = {
+        country: count
+        for country, count in stats["by_country"].items()
+        if count
+    }
+    if nonzero_countries != dict(actual_by_country):
+        fail(
+            errors,
+            "stats.by_country nonzero buckets do not match active observed countries",
+        )
 
     verified_or_caveated = sum(
         1

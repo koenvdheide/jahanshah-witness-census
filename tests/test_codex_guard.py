@@ -173,6 +173,29 @@ class CodexGuardTests(unittest.TestCase):
         self.assertEqual(output["permissionDecision"], "deny")
         self.assertIn("data/metadata.json", output["permissionDecisionReason"])
 
+    def test_main_formats_posttool_failure_as_block_json(self) -> None:
+        guard = load_guard()
+        payload = {
+            "hook_event_name": "PostToolUse",
+            "tool_name": "Edit",
+            "tool_input": {"file_path": "data/witness_register.json"},
+        }
+        completed = subprocess.CompletedProcess(
+            args=[sys.executable, "scripts/validate_dataset.py"],
+            returncode=1,
+            stdout="Dataset validation failed\n- bad stats\n",
+        )
+
+        with mock.patch.object(guard.subprocess, "run", return_value=completed):
+            exit_code, stdout, stderr = guard.run(json.dumps(payload), ROOT)
+
+        self.assertEqual(exit_code, 0)
+        self.assertEqual(stderr, "")
+        parsed = json.loads(stdout)
+        self.assertEqual(parsed["decision"], "block")
+        self.assertIn("bad stats", parsed["reason"])
+        self.assertNotIn("hookSpecificOutput", parsed)
+
     def test_dirty_release_paths_detects_staged_untracked_hook_and_test_changes(self) -> None:
         guard = load_guard()
         completed = subprocess.CompletedProcess(
@@ -200,6 +223,36 @@ class CodexGuardTests(unittest.TestCase):
             run.call_args.args[0],
             ["git", "status", "--porcelain", "--untracked-files=all"],
         )
+
+    def test_shell_postflight_runs_release_check_when_release_paths_are_dirty(self) -> None:
+        guard = load_guard()
+        payload = {
+            "hook_event_name": "PostToolUse",
+            "tool_name": "shell_command",
+            "tool_input": {"command": "Set-Content .zenodo.json '{}'"},
+        }
+        calls: list[list[str]] = []
+
+        def fake_run(command: list[str], root: Path):
+            calls.append(command)
+            return guard.Decision(True)
+
+        with (
+            mock.patch.object(guard, "_dirty_release_paths", return_value=[".zenodo.json"]),
+            mock.patch.object(guard, "_run", side_effect=fake_run),
+        ):
+            decision = guard.postflight(payload, ROOT)
+
+        self.assertTrue(decision.allowed)
+        self.assertEqual(calls, [[sys.executable, "scripts/release_check.py"]])
+
+    def test_hooks_json_posttool_covers_shell_tool_names(self) -> None:
+        hooks = json.loads((ROOT / ".codex" / "hooks.json").read_text(encoding="utf-8"))
+        matcher = hooks["hooks"]["PostToolUse"][0]["matcher"]
+
+        self.assertIn("shell_command", matcher)
+        self.assertIn("unified_exec", matcher)
+        self.assertIn("Bash", matcher)
 
 
 class ReleaseCheckTests(unittest.TestCase):

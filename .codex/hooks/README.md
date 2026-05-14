@@ -22,8 +22,11 @@ Pre-write hooks block:
 - new `data/tezkire_extracts/*.md` extracts unless
   `data/tezkire_extracts/index.json` is touched in the same write or patch.
 
-Post-write hooks run `python scripts\validate_dataset.py` after relevant edits
-to `README.md`, `data/**`, or the release/metadata scripts.
+Post-write hooks run `python scripts\validate_dataset.py` after relevant
+file-tool edits to `README.md`, `data/**`, or the release/metadata scripts.
+They also watch shell-style tools (`Bash`, `shell_command`, `unified_exec`,
+and `exec_command`) after the command finishes; if those commands leave watched
+release paths dirty, the hook runs `python scripts\release_check.py`.
 
 On `Stop`, the hook runs `python scripts\release_check.py` when watched release
 paths are dirty, including `data/**`, `scripts/**`, `.codex/**`, `tests/**`,
